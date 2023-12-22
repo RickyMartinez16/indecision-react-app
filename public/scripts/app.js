@@ -218,11 +218,9 @@ var AddOption = function (_React$Component6) {
             e.preventDefault();
 
             var option = e.target.elements.option.value.trim();
+            var error = this.props.handleAddOption(option);
 
-            if (option) {
-                this.props.handleAddOption(option);
-                e.target.elements.option.value = " ";
-            }
+            e.target.elements.option.value = " ";
         }
     }, {
         key: "render",
