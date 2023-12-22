@@ -101,6 +101,11 @@ class Option extends React.Component{
 }
 
 class AddOption extends React.Component{
+    constructor(props){
+        super(props);
+        this.handleAddOption = this.handleAddOption.bind(this)
+    }
+
     handleAddOption(e){
         e.preventDefault();
         
