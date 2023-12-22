@@ -29,7 +29,7 @@ class IndecisionApp extends React.Component{
     handleAddOption(option){
         if(!option){
             return "Enter valid value to add item"
-        } else if (this.state.options.indexOf(options) > -1){
+        } else if (this.state.options.indexOf(option) > -1){
             return "This option already exists"
         }
 
@@ -114,6 +114,9 @@ class AddOption extends React.Component{
     constructor(props){
         super(props);
         this.handleAddOption = this.handleAddOption.bind(this)
+        this.state = {
+            error: undefined
+        }
     }
 
     handleAddOption(e){
@@ -122,7 +125,12 @@ class AddOption extends React.Component{
         const option = e.target.elements.option.value.trim()
         const error = this.props.handleAddOption(option);
 
-        
+        this.setState(() => {
+            return {
+                error
+            }
+        })
+
         e.target.elements.option.value = " "
         
     }
@@ -130,6 +138,7 @@ class AddOption extends React.Component{
     render(){
         return (
             <div>
+            {this.state.error && <p>{this.state.error}</p>}
             <form onSubmit={this.handleAddOption}>
                 <input type="text" name="option"></input>
                 <button>Add Option</button>
