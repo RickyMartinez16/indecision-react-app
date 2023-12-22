@@ -112,7 +112,7 @@ class AddOption extends React.Component{
         const option = e.target.elements.option.value.trim()
 
         if(option){
-            this.props.handleAddOption(option)
+            this.props.handleAddOption(option);
             e.target.elements.option.value = " "
         }
     }
