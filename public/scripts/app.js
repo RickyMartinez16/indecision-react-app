@@ -21,6 +21,7 @@ var IndecisionApp = function (_React$Component) {
 
         _this.handleDeleteOptions = _this.handleDeleteOptions.bind(_this);
         _this.handlePick = _this.handlePick.bind(_this);
+        _this.handleAddOption = _this.handleAddOption.bind(_this);
         _this.state = {
             options: []
         };
@@ -42,6 +43,11 @@ var IndecisionApp = function (_React$Component) {
             var randomNum = Math.floor(Math.random() * this.state.options.length);
             var option = this.state.options[randomNum];
             alert(option);
+        }
+    }, {
+        key: "handleAddOption",
+        value: function handleAddOption(option) {
+            console.log(option);
         }
     }, {
         key: "render",
