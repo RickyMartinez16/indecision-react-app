@@ -31,7 +31,7 @@ class IndecisionApp extends React.Component{
             <Header title={title} subTitle={subTitle}/>
             <Action 
                 hasOptions={this.state.options.length > 0}
-                handlePick={handlePick}
+                handlePick={this.handlePick}
             />
             <Options 
                 options={this.state.options}
