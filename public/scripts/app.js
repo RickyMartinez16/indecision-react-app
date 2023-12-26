@@ -98,9 +98,9 @@ var Action = function (_React$Component3) {
                     "button",
                     {
                         onClick: this.handlePick,
-                        disabled: !this.hasOptions
+                        disabled: !this.props.hasOptions
                     },
-                    "Options Button"
+                    "What Should I Do?"
                 )
             );
         }

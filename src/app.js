@@ -42,9 +42,9 @@ class Action extends React.Component{
             <div>
             <button 
                 onClick={this.handlePick}
-                disabled={!this.hasOptions}
+                disabled={!this.props.hasOptions}
             >
-            Options Button</button>
+            What Should I Do?</button>
             </div>
         )
     }
