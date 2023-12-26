@@ -54,9 +54,6 @@ class Header extends React.Component{
 }
 
 class Action extends React.Component{
-    handlePick(){
-        alert("handle pick")
-    }
 
     render(){
         return (
