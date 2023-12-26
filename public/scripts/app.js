@@ -36,6 +36,13 @@ var IndecisionApp = function (_React$Component) {
             });
         }
     }, {
+        key: "handlePick",
+        value: function handlePick() {
+            var randomNum = Math.floor(Math.random() * app.options.length);
+            var option = app.options[randomNum];
+            alert(option);
+        }
+    }, {
         key: "render",
         value: function render() {
             return React.createElement(
