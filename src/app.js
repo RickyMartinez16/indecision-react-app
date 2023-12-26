@@ -67,10 +67,6 @@ class Options extends React.Component{
         this.removeAllClick = this.removeAllClick.bind(this)
     }
 
-    removeAllClick(){
-        alert("remove all")
-    }
-
     render(){
         return (
             <div>

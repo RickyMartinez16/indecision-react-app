@@ -134,11 +134,6 @@ var Options = function (_React$Component4) {
     }
 
     _createClass(Options, [{
-        key: "removeAllClick",
-        value: function removeAllClick() {
-            alert("remove all");
-        }
-    }, {
         key: "render",
         value: function render() {
             return React.createElement(
