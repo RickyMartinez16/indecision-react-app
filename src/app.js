@@ -66,7 +66,7 @@ class Options extends React.Component{
     render(){
         return (
             <div>
-            <button onClick={this.removeAllClick}>Remove All Options</button>
+            <button onClick={}>Remove All Options</button>
             {this.props.options.map((option) => {
                 return <Option key={option} optionText={option}/>
             })}
