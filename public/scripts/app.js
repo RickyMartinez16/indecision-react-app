@@ -115,7 +115,7 @@ var Action = function (_React$Component3) {
                 React.createElement(
                     "button",
                     {
-                        onClick: this.handlePick,
+                        onClick: this.props.handlePick,
                         disabled: !this.props.hasOptions
                     },
                     "What Should I Do?"
