@@ -22,7 +22,10 @@ class IndecisionApp extends React.Component{
             <div>
             <Header title={title} subTitle={subTitle}/>
             <Action hasOptions={this.state.options.length > 0}/>
-            <Options options={this.state.options}/>
+            <Options 
+                options={this.state.options}
+                handleDeleteOptions={this.handleDeleteOptions}
+            />
             <AddOption />
             </div>
         )
