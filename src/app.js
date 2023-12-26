@@ -4,6 +4,7 @@ const subTitle = "Put your life in the hands of a computer beep bop";
 class IndecisionApp extends React.Component{
     constructor(props){
         super(props);
+        this.handleDeleteOptions = this.handleDeleteOptions.bind(this)
         this.state = {
             options: ["uno", "dos", "tres"]
         }
@@ -66,7 +67,7 @@ class Options extends React.Component{
     render(){
         return (
             <div>
-            <button onClick={}>Remove All Options</button>
+            <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
             {this.props.options.map((option) => {
                 return <Option key={option} optionText={option}/>
             })}
