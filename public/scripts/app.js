@@ -27,7 +27,9 @@ var VisibilityToggle = function (_React$Component) {
         key: "handleToggleInvisibility",
         value: function handleToggleInvisibility() {
             this.setState(function (prevState) {
-                return {};
+                return {
+                    toggle: prevState.toggle = !toggle
+                };
             });
         }
     }, {
