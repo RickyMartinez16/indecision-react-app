@@ -4,13 +4,16 @@ class VisibilityToggle extends React.Component{
     }
 
     render(){
-        <div>
-        <h1>Visibility Toggle</h1>
-        <button>Show secret details</button>
-        </div>
+        return(
+            <div>
+            <h1>Visibility Toggle</h1>
+            <button>Show secret details</button>
+            </div>
+        )
     }
 }
 
+ReactDOM.render(<VisibilityToggle />, document.getElementById("app"))
 
 // let toggle = false;
 
