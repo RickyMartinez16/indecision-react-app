@@ -9,6 +9,7 @@ class IndecisionApp extends React.Component{
             options: []
         }
     }
+    
     render(){
         return(
             <div>
