@@ -24,6 +24,13 @@ var VisibilityToggle = function (_React$Component) {
     }
 
     _createClass(VisibilityToggle, [{
+        key: "handleToggleInvisibility",
+        value: function handleToggleInvisibility() {
+            this.setState(function (prevState) {
+                return {};
+            });
+        }
+    }, {
         key: "render",
         value: function render() {
             return React.createElement(

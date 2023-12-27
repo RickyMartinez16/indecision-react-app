@@ -7,6 +7,14 @@ class VisibilityToggle extends React.Component{
         }
     }
 
+    handleToggleInvisibility(){
+        this.setState((prevState) => {
+            return {
+                
+            }
+        })
+    }
+
     render(){
         return(
             <div>
