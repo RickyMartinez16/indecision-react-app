@@ -46,7 +46,16 @@ var VisibilityToggle = function (_React$Component) {
                 React.createElement(
                     "button",
                     { onClick: this.handleToggleInvisibility },
-                    "Show secret details"
+                    this.state.toggle === true ? "Hide Details" : "Show secrets"
+                ),
+                this.state.toggle && React.createElement(
+                    "div",
+                    null,
+                    React.createElement(
+                        "p",
+                        null,
+                        "super secret details from a secret message"
+                    )
                 )
             );
         }

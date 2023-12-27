@@ -19,7 +19,12 @@ class VisibilityToggle extends React.Component{
         return(
             <div>
             <h1>Visibility Toggle</h1>
-            <button onClick={this.handleToggleInvisibility}>Show secret details</button>
+            <button onClick={this.handleToggleInvisibility}>{this.state.toggle === true ? "Hide Details" : "Show secrets"}</button>
+            {this.state.toggle && (
+                <div>
+                <p>super secret details from a secret message</p>
+                </div>
+            )}
             </div>
         )
     }
