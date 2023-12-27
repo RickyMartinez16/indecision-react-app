@@ -3,7 +3,7 @@ class VisibilityToggle extends React.Component{
         super(props);
         this.handleToggleInvisibility = this.handleToggleInvisibility.bind(this);
         this.state = {
-            
+            toggle: false
         }
     }
 
