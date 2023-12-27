@@ -1,4 +1,14 @@
+class VisibilityToggle extends React.Component{
+    constructor(props){
 
+    }
+
+    render(){
+        <div>
+        <h1>Visibility Toggle</h1>
+        </div>
+    }
+}
 
 
 // let toggle = false;
