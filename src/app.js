@@ -1,15 +1,14 @@
 const title = "Indecision App";
 const subTitle = "Put your life in the hands of a computer beep bop";
-const options = ["uno", "dos", "tres"]
 
 class IndecisionApp extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            options: []
+            options: ["uno", "dos", "tres"]
         }
     }
-    
+
     render(){
         return(
             <div>
