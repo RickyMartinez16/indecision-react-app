@@ -14,7 +14,7 @@ class IndecisionApp extends React.Component{
             <div>
             <Header title={title} subTitle={subTitle}/>
             <Action />
-            <Options options={options}/>
+            <Options options={this.state.options}/>
             <AddOption />
             </div>
         )
