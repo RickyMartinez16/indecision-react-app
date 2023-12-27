@@ -28,7 +28,7 @@ var VisibilityToggle = function (_React$Component) {
         value: function handleToggleInvisibility() {
             this.setState(function (prevState) {
                 return {
-                    toggle: prevState.toggle = !toggle
+                    toggle: !prevState.toggle
                 };
             });
         }
@@ -45,7 +45,7 @@ var VisibilityToggle = function (_React$Component) {
                 ),
                 React.createElement(
                     "button",
-                    { onClick: handleToggleInvisibility },
+                    { onClick: this.handleToggleInvisibility },
                     "Show secret details"
                 )
             );

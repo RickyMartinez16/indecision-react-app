@@ -10,7 +10,7 @@ class VisibilityToggle extends React.Component{
     handleToggleInvisibility(){
         this.setState((prevState) => {
             return {
-                toggle: prevState.toggle = !toggle
+                toggle: !prevState.toggle
             }
         })
     }
@@ -19,7 +19,7 @@ class VisibilityToggle extends React.Component{
         return(
             <div>
             <h1>Visibility Toggle</h1>
-            <button onClick={handleToggleInvisibility}>Show secret details</button>
+            <button onClick={this.handleToggleInvisibility}>Show secret details</button>
             </div>
         )
     }
