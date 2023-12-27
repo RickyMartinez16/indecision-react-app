@@ -96,7 +96,10 @@ var Action = function (_React$Component3) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: this.handlePick },
+                    {
+                        onClick: this.handlePick,
+                        disabled: !this.hasOptions
+                    },
                     "Options Button"
                 )
             );
