@@ -30,7 +30,7 @@ var Counter = function (_React$Component) {
         value: function handleAddOne() {
             this.setState(function (prevState) {
                 return {
-                    count: prevState.count++
+                    count: prevState.count + 1
                 };
             });
         }

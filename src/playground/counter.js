@@ -12,7 +12,7 @@ class Counter extends React.Component {
     handleAddOne(){
         this.setState((prevState) => {
             return {
-                count: prevState.count++
+                count: prevState.count + 1
             }
         })
     }
