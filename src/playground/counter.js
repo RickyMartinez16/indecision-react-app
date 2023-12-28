@@ -7,6 +7,10 @@ class Counter extends React.Component {
         alert("minus one")
     }
 
+    handleReset(){
+        alert("handle reset")
+    }
+
     render(){
         return (
         <div>

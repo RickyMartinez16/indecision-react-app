@@ -28,6 +28,11 @@ var Counter = function (_React$Component) {
             alert("minus one");
         }
     }, {
+        key: "handleReset",
+        value: function handleReset() {
+            alert("handle reset");
+        }
+    }, {
         key: "render",
         value: function render() {
             return React.createElement(
