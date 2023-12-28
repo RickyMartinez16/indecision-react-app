@@ -55,7 +55,7 @@ var Counter = function (_React$Component) {
                 ),
                 React.createElement(
                     "button",
-                    null,
+                    { onClick: this.handleReset },
                     "RESET"
                 )
             );
