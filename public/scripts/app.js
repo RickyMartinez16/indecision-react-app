@@ -45,9 +45,7 @@ var Counter = function (_React$Component) {
         }
     }, {
         key: "handleReset",
-        value: function handleReset() {
-            alert("handle reset");
-        }
+        value: function handleReset() {}
     }, {
         key: "render",
         value: function render() {

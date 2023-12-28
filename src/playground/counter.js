@@ -26,7 +26,7 @@ class Counter extends React.Component {
     }
 
     handleReset(){
-        alert("handle reset")
+        
     }
 
     render(){
