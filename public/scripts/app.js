@@ -23,6 +23,11 @@ var Counter = function (_React$Component) {
             alert("handle add one");
         }
     }, {
+        key: "handleMinusOne",
+        value: function handleMinusOne() {
+            alert("minus one");
+        }
+    }, {
         key: "render",
         value: function render() {
             return React.createElement(

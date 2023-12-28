@@ -3,6 +3,10 @@ class Counter extends React.Component {
         alert("handle add one")
     }
 
+    handleMinusOne(){
+        alert("minus one")
+    }
+
     render(){
         return (
         <div>
