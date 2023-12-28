@@ -50,6 +50,8 @@ var Counter = function (_React$Component) {
     return Counter;
 }(React.Component);
 
+ReactDOM.render(React.createElement(Counter, null), document.getElementById("app"));
+
 // let count = 0
 // const add1 = () => {
 //     count++
