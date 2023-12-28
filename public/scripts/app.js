@@ -45,7 +45,7 @@ var Counter = function (_React$Component) {
                 ),
                 React.createElement(
                     "button",
-                    null,
+                    { onClick: this.handleAddOne },
                     "+1"
                 ),
                 React.createElement(
