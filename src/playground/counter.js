@@ -1,4 +1,8 @@
 class Counter extends React.Component {
+    handleAddOne(){
+        alert("handle add one")
+    }
+
     render(){
         return (
         <div>

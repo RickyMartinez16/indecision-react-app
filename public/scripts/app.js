@@ -18,6 +18,11 @@ var Counter = function (_React$Component) {
     }
 
     _createClass(Counter, [{
+        key: "handleAddOne",
+        value: function handleAddOne() {
+            alert("handle add one");
+        }
+    }, {
         key: "render",
         value: function render() {
             return React.createElement(
