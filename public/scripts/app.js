@@ -27,6 +27,21 @@ var Counter = function (_React$Component) {
                     "h1",
                     null,
                     "Count: "
+                ),
+                React.createElement(
+                    "button",
+                    null,
+                    "+1"
+                ),
+                React.createElement(
+                    "button",
+                    null,
+                    "-1"
+                ),
+                React.createElement(
+                    "button",
+                    null,
+                    "RESET"
                 )
             );
         }
