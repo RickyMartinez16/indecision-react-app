@@ -10,6 +10,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var title = "Indecision App";
 var subTitle = "Put your life in the hands of a computer beep bop";
+var options = ["uno", "dos", "tres"];
 
 var IndecisionApp = function (_React$Component) {
     _inherits(IndecisionApp, _React$Component);
