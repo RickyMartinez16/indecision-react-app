@@ -8,7 +8,7 @@ class IndecisionApp extends React.Component{
             <div>
             <Header title={title} subTitle={subTitle}/>
             <Action />
-            <Options />
+            <Options options={options}/>
             <AddOption />
             </div>
         )
