@@ -112,6 +112,11 @@ var Options = function (_React$Component4) {
             return React.createElement(
                 "div",
                 null,
+                React.createElement(
+                    "p",
+                    null,
+                    this.props.options.length
+                ),
                 React.createElement(Option, null)
             );
         }
