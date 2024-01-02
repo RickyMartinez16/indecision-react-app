@@ -5,7 +5,7 @@ var template2 =
     <div>
         <h1>Ricky Martinez!</h1>
         <p>Age: 32</p>
-        <p>Location: New Jersey</p>
+        <p>Location: Brick, New Jersey</p>
 
     </div>
 var appRoot = document.getElementById("app");

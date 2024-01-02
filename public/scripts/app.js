@@ -32,7 +32,7 @@ var template2 = React.createElement(
     React.createElement(
         "p",
         null,
-        "Location: New Jersey"
+        "Location: Brick, New Jersey"
     )
 );
 var appRoot = document.getElementById("app");
