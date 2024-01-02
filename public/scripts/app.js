@@ -22,7 +22,7 @@ var template2 = React.createElement(
     React.createElement(
         "h1",
         null,
-        "Ricky Martinez"
+        "Ricky Martinez!"
     ),
     React.createElement(
         "p",
