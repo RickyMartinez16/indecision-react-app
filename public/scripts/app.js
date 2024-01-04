@@ -104,5 +104,5 @@ var Traveler = function (_Person2) {
 var me = new Traveler("Ricky Martinez", 32, "New Jersey");
 console.log(me.getGreeting());
 
-var other = new Traveler();
+var other = new Traveler(undefined, undefined, "Nowhere");
 console.log(other.getGreeting());
