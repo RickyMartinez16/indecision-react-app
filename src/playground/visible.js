@@ -10,7 +10,11 @@ const render = () => {
         <div>
             <h1>Visibility Toggle</h1>
             <button onClick={onShowDetails}>{toggle === true ? "Hide details" : "Show secret details"}</button>
-            {toggle ? <p>secret details</p> : <p></p>}
+            {toggle && (
+                <div>
+                <p>Super secret details</p>
+                </div>
+            )}
         </div>
 
     ReactDOM.render(template, appRoot)       

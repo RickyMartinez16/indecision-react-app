@@ -21,11 +21,15 @@ var render = function render() {
             { onClick: onShowDetails },
             toggle === true ? "Hide details" : "Show secret details"
         ),
-        toggle ? React.createElement(
-            "p",
+        toggle && React.createElement(
+            "div",
             null,
-            "secret details"
-        ) : React.createElement("p", null)
+            React.createElement(
+                "p",
+                null,
+                "Super secret details"
+            )
+        )
     );
 
     ReactDOM.render(template, appRoot);
