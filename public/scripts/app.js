@@ -55,12 +55,12 @@ var Header = function (_React$Component2) {
                 React.createElement(
                     "h1",
                     null,
-                    "Indecision App"
+                    this.props.title
                 ),
                 React.createElement(
                     "h2",
                     null,
-                    "Put your life in the hands of a computer"
+                    this.props.subTitle
                 )
             );
         }
