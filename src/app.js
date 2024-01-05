@@ -9,6 +9,16 @@ class Header extends React.Component{
     }
 }
 
+class Action extends React.Component{
+    render(){
+        return (
+            <div>
+            <button>Options Button</button>
+            </div>
+        )
+    }
+}
+
 const jsx = (
     <div>
     <Header />
