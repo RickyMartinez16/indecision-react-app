@@ -1,10 +1,10 @@
 let toggle = false;
 
 const onShowDetails = () => {
-    if(toggle){
-        toggle = false
-    } else {
+    if(!toggle){
         toggle = true
+    } else {
+        toggle = false
     }
 }
 
@@ -12,7 +12,7 @@ const render = () => {
     const template = 
         <div>
             <h1>Visibility Toggle</h1>
-            <button onClick={onShowDetails}>Show Details</button>
+            <button onClick={onShowDetails}>{toggle === true ? "Hide details" : "Show secret details"}</button>
             {toggle ? <p>secret details</p> : <p></p>}
         </div>
 

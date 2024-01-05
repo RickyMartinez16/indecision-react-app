@@ -3,10 +3,10 @@
 var toggle = false;
 
 var onShowDetails = function onShowDetails() {
-    if (toggle) {
-        toggle = false;
-    } else {
+    if (!toggle) {
         toggle = true;
+    } else {
+        toggle = false;
     }
 };
 
@@ -22,7 +22,7 @@ var render = function render() {
         React.createElement(
             "button",
             { onClick: onShowDetails },
-            "Show Details"
+            toggle === true ? "Hide details" : "Show secret details"
         ),
         toggle ? React.createElement(
             "p",
