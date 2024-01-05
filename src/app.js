@@ -43,6 +43,8 @@ const jsx = (
     <div>
     <Header />
     <Action />
+    <Options />
+    <AddOption />
     </div>
 )
 
