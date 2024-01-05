@@ -67,6 +67,33 @@ var Action = function (_React$Component2) {
     return Action;
 }(React.Component);
 
+var Options = function (_React$Component3) {
+    _inherits(Options, _React$Component3);
+
+    function Options() {
+        _classCallCheck(this, Options);
+
+        return _possibleConstructorReturn(this, (Options.__proto__ || Object.getPrototypeOf(Options)).apply(this, arguments));
+    }
+
+    _createClass(Options, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                null,
+                React.createElement(
+                    "p",
+                    null,
+                    "Your options here"
+                )
+            );
+        }
+    }]);
+
+    return Options;
+}(React.Component);
+
 var jsx = React.createElement(
     "div",
     null,
