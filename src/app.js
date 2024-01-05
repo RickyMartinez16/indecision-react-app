@@ -1,4 +1,5 @@
-const title = "Indecision App"
+const title = "Indecision App";
+const subTitle = "Put your life in the hands of a computer beep bop"
 
 class IndecisionApp extends React.Component{
     render(){
