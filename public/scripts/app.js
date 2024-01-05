@@ -70,7 +70,8 @@ var Action = function (_React$Component2) {
 var jsx = React.createElement(
     "div",
     null,
-    React.createElement(Header, null)
+    React.createElement(Header, null),
+    React.createElement(Action, null)
 );
 
 ReactDOM.render(jsx, document.getElementById("app"));

@@ -22,6 +22,7 @@ class Action extends React.Component{
 const jsx = (
     <div>
     <Header />
+    <Action />
     </div>
 )
 
