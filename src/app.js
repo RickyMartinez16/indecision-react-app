@@ -29,6 +29,16 @@ class Options extends React.Component{
     }
 }
 
+class AddOption extends React.Component{
+    render(){
+        return (
+            <div>
+            <p>Here is where you add an option</p>
+            </div>
+        )
+    }
+}
+
 const jsx = (
     <div>
     <Header />
