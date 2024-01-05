@@ -20,7 +20,7 @@ var Header = function (_React$Component) {
     _createClass(Header, [{
         key: "render",
         value: function render() {
-            React.createElement(
+            return React.createElement(
                 "div",
                 null,
                 React.createElement(
@@ -40,4 +40,10 @@ var Header = function (_React$Component) {
     return Header;
 }(React.Component);
 
-ReactDOM.render(jas, document.getElementById("app"));
+var jsx = React.createElement(
+    "div",
+    null,
+    React.createElement(Header, null)
+);
+
+ReactDOM.render(jsx, document.getElementById("app"));
