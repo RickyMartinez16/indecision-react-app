@@ -26,7 +26,7 @@ var IndecisionApp = function (_React$Component) {
             return React.createElement(
                 "div",
                 null,
-                React.createElement(Header, null),
+                React.createElement(Header, { title: title, subTitle: subTitle }),
                 React.createElement(Action, null),
                 React.createElement(Options, null),
                 React.createElement(AddOption, null)
