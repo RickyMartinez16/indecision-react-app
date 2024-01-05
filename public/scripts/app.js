@@ -8,6 +8,11 @@ var render = function render() {
             "h1",
             null,
             "Visibility Toggle"
+        ),
+        React.createElement(
+            "button",
+            null,
+            "Show Details"
         )
     );
 
