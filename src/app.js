@@ -1,3 +1,5 @@
+const title = "Indecision App"
+
 class IndecisionApp extends React.Component{
     render(){
         return(
@@ -61,14 +63,5 @@ class AddOption extends React.Component{
         )
     }
 }
-
-// const jsx = (
-//     <div>
-//     <Header />
-//     <Action />
-//     <Options />
-//     <AddOption />
-//     </div>
-// )
 
 ReactDOM.render(<IndecisionApp />, document.getElementById("app"))

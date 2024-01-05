@@ -8,6 +8,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var title = "Indecision App";
+
 var IndecisionApp = function (_React$Component) {
     _inherits(IndecisionApp, _React$Component);
 
@@ -169,14 +171,5 @@ var AddOption = function (_React$Component6) {
 
     return AddOption;
 }(React.Component);
-
-// const jsx = (
-//     <div>
-//     <Header />
-//     <Action />
-//     <Options />
-//     <AddOption />
-//     </div>
-// )
 
 ReactDOM.render(React.createElement(IndecisionApp, null), document.getElementById("app"));
