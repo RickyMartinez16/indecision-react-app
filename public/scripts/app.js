@@ -26,12 +26,12 @@ var Header = function (_React$Component) {
                 React.createElement(
                     "h1",
                     null,
-                    "Title"
+                    "Indecision App"
                 ),
                 React.createElement(
                     "h2",
                     null,
-                    "Sub title"
+                    "Put your life in the hands of a computer"
                 )
             );
         }
