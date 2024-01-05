@@ -3,11 +3,8 @@
 var toggle = false;
 
 var onShowDetails = function onShowDetails() {
-    if (!toggle) {
-        toggle = true;
-    } else {
-        toggle = false;
-    }
+    toggle = !toggle;
+    render();
 };
 
 var render = function render() {

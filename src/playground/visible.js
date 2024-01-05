@@ -1,11 +1,8 @@
 let toggle = false;
 
 const onShowDetails = () => {
-    if(!toggle){
-        toggle = true
-    } else {
-        toggle = false
-    }
+    toggle = !toggle
+    render()
 }
 
 const render = () => {
