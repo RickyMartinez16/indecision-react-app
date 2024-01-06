@@ -8,13 +8,18 @@ var template = React.createElement(
         null,
         "Indecision App"
     ),
-    " ",
     React.createElement(
         "p",
         null,
         "This is a parafgraph tag"
     )
 );
+
+var user = {
+    name: "Baby Yoda",
+    age: 56,
+    location: "Wherever Mando is"
+};
 
 var template2 = React.createElement(
     "div",

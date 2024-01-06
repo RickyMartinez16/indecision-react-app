@@ -1,6 +1,17 @@
 
-var template = <div><h1>Indecision App</h1> <p>This is a parafgraph tag</p></div>;
+var template = 
+    <div>
+        <h1>Indecision App</h1> 
+        <p>This is a parafgraph tag</p>
+    </div>;
 
+var user = {
+    name: "Baby Yoda",
+    age: 56,
+    location: "Wherever Mando is"
+}
+ 
+    
 var template2 = 
     <div>
         <h1>Ricky Martinez, the cool guy!</h1>
