@@ -12,6 +12,11 @@ var template = React.createElement(
         "p",
         null,
         "This is a parafgraph tag"
+    ),
+    React.createElement(
+        "p",
+        null,
+        "Location: "
     )
 );
 
