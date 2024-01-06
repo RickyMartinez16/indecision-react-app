@@ -11,7 +11,7 @@ var template = React.createElement(
     React.createElement(
         "p",
         null,
-        "This is a parafgraph tag"
+        "Age: This is a parafgraph tag"
     ),
     React.createElement(
         "p",

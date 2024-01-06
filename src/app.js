@@ -2,7 +2,7 @@
 var template = 
     <div>
         <h1>Indecision App</h1> 
-        <p>This is a parafgraph tag</p>
+        <p>Age: This is a parafgraph tag</p>
         <p>Location: </p>
     </div>;
 
