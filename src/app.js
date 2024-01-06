@@ -1,10 +1,10 @@
 var user = {
-    name: "Baby Yoda",
-    age: 56,
-    location: "Wherever Mando is"
+    title: "Baby Yoda",
+    subtitle: 56,
+    location: "Coming soon near you!"
 }
 
-var template1 = 
+var app = 
     <div>
         <h1>{user.name}</h1> 
         <p>Age: {user.age}</p>
