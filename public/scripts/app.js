@@ -17,7 +17,8 @@ var template = React.createElement(
     React.createElement(
         "p",
         null,
-        "Location: "
+        "Location: ",
+        user.location
     )
 );
 

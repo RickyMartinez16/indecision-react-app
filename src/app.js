@@ -3,7 +3,7 @@ var template =
     <div>
         <h1>{user.name}</h1> 
         <p>Age: {user.age}</p>
-        <p>Location: </p>
+        <p>Location: {user.location}</p>
     </div>;
 
 var user = {
