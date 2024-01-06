@@ -1,4 +1,4 @@
-var user = {
+var app = {
     title: "Baby Yoda",
     subtitle: 56,
     location: "Coming soon near you!"
