@@ -6,7 +6,7 @@ var user = {
     location: "Coming soon near you!"
 };
 
-var app = React.createElement(
+var template1 = React.createElement(
     "div",
     null,
     React.createElement(

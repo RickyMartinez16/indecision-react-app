@@ -4,7 +4,7 @@ var user = {
     location: "Coming soon near you!"
 }
 
-var app = 
+var template1 = 
     <div>
         <h1>{user.title}</h1> 
         <p>Age: {user.subtitle}</p>
