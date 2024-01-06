@@ -6,7 +6,7 @@ var user = {
     location: "Wherever Mando is"
 };
 
-var template = React.createElement(
+var template1 = React.createElement(
     "div",
     null,
     React.createElement(
