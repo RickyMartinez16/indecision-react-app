@@ -1,14 +1,14 @@
 var app = {
-    title: "Baby Yoda",
-    subtitle: 56,
+    title: "Fancy App",
+    subtitle: "The fanciest app you've ever seen.",
     location: "Coming soon to a phone near you!"
 }
 
 var template1 = 
     <div>
-        <h1>{user.title}</h1> 
-        <p>Age: {user.subtitle}</p>
-        <p>Location: {user.location}</p>
+        <h1>{app.title}</h1> 
+        <p>Age: {app.subtitle}</p>
+        <p>Location: {app.location}</p>
     </div>;
     
 var template2 = 

@@ -1,8 +1,8 @@
 "use strict";
 
 var app = {
-    title: "Baby Yoda",
-    subtitle: 56,
+    title: "Fancy App",
+    subtitle: "The fanciest app you've ever seen.",
     location: "Coming soon to a phone near you!"
 };
 
@@ -12,19 +12,19 @@ var template1 = React.createElement(
     React.createElement(
         "h1",
         null,
-        user.title
+        app.title
     ),
     React.createElement(
         "p",
         null,
         "Age: ",
-        user.subtitle
+        app.subtitle
     ),
     React.createElement(
         "p",
         null,
         "Location: ",
-        user.location
+        app.location
     )
 );
 
