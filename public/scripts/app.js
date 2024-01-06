@@ -18,7 +18,7 @@ var app = React.createElement(
         "p",
         null,
         "Age: ",
-        user.age
+        user.subtitle
     ),
     React.createElement(
         "p",
