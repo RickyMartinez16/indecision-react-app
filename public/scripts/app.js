@@ -1,5 +1,11 @@
 "use strict";
 
+var user = {
+    name: "Baby Yoda",
+    age: 56,
+    location: "Wherever Mando is"
+};
+
 var template = React.createElement(
     "div",
     null,
@@ -21,12 +27,6 @@ var template = React.createElement(
         user.location
     )
 );
-
-var user = {
-    name: "Baby Yoda",
-    age: 56,
-    location: "Wherever Mando is"
-};
 
 var template2 = React.createElement(
     "div",

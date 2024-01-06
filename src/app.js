@@ -1,3 +1,8 @@
+var user = {
+    name: "Baby Yoda",
+    age: 56,
+    location: "Wherever Mando is"
+}
 
 var template = 
     <div>
@@ -5,13 +10,6 @@ var template =
         <p>Age: {user.age}</p>
         <p>Location: {user.location}</p>
     </div>;
-
-var user = {
-    name: "Baby Yoda",
-    age: 56,
-    location: "Wherever Mando is"
-}
- 
     
 var template2 = 
     <div>
