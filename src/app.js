@@ -1,7 +1,7 @@
 var app = {
     title: "Baby Yoda",
     subtitle: 56,
-    location: "Coming soon near you!"
+    location: "Coming soon to a phone near you!"
 }
 
 var template1 = 
