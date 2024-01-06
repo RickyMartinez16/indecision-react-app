@@ -2,7 +2,7 @@
 var template = 
     <div>
         <h1>{user.name}</h1> 
-        <p>Age: This is a parafgraph tag</p>
+        <p>Age: {user.age}</p>
         <p>Location: </p>
     </div>;
 
