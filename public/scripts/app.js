@@ -12,7 +12,7 @@ var app = React.createElement(
     React.createElement(
         "h1",
         null,
-        user.name
+        user.title
     ),
     React.createElement(
         "p",

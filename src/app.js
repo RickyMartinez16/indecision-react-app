@@ -6,7 +6,7 @@ var user = {
 
 var app = 
     <div>
-        <h1>{user.name}</h1> 
+        <h1>{user.title}</h1> 
         <p>Age: {user.age}</p>
         <p>Location: {user.location}</p>
     </div>;
