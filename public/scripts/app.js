@@ -14,12 +14,6 @@ var template1 = React.createElement(
         null,
         app.title
     ),
-    React.createElement(
-        "p",
-        null,
-        "Age: ",
-        app.subtitle
-    ),
     app.subtitle && React.createElement(
         "p",
         null,
@@ -76,4 +70,4 @@ var template2 = React.createElement(
 );
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template1, appRoot);
+ReactDOM.render(template2, appRoot);
