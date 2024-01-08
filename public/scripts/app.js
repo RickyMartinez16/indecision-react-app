@@ -17,12 +17,12 @@ var template1 = React.createElement(
     app.subtitle && React.createElement(
         "p",
         null,
-        "app.subtitle"
+        app.subtitle
     ),
     React.createElement(
         "p",
         null,
-        options.length > 0 ? "Here are your options" : "No options"
+        app.options.length > 0 ? "Here are your options:" : "No options"
     )
 );
 
@@ -68,6 +68,7 @@ var template2 = React.createElement(
         getLocation(user.location)
     )
 );
+
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template2, appRoot);
+ReactDOM.render(template1, appRoot);
