@@ -17,8 +17,12 @@ var user = {
     location: "Atlanta, GA"
 }
     
-function getLocation(){
-    return "Unknown"
+function getLocation(location){
+    if(location){
+        return location
+    } else {
+        return "Unknown"
+    }
 }
     
 var template2 = 
@@ -26,7 +30,7 @@ var template2 =
         <h1>Template 2</h1>
         <h2>{user.name}</h2>
         <p>Age: {user.age}</p>
-        <p>Location: {getLocation()}</p>
+        <p>Location: {getLocation(user.location)}</p>
 
     </div>
 var appRoot = document.getElementById("app");
