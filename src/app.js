@@ -1,17 +1,17 @@
-var app = {
+const app = {
     title: "Fancy App",
     subtitle: "The fanciest app you've ever seen.",
     options: ["ONE", "TWO", "THREE"]
 }
 
-var template1 = 
+const template1 = 
     <div>
         <h1>{app.title}</h1> 
         {app.subtitle && <p>{app.subtitle}</p>}
         <p>{app.options.length > 0 ? "Here are your options:" : "No options"}</p>
     </div>;
 
-var user = {
+const user = {
     name: "Ricky",
     age: 32,
     location: "Atlanta, GA"
@@ -23,7 +23,7 @@ function getLocation(location){
     }
 }
     
-var template2 = 
+const template2 = 
     <div>
         <h1>Template 2</h1>
         <h2>{user.name ? user.name : "Anonymous"}</h2>
@@ -32,6 +32,6 @@ var template2 =
     </div>
 
 
-var appRoot = document.getElementById("app");
+const appRoot = document.getElementById("app");
 
 ReactDOM.render(template1, appRoot)
