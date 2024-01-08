@@ -27,7 +27,7 @@ var template2 =
     <div>
         <h1>Template 2</h1>
         <h2>{user.name ? user.name : "Anonymous"}</h2>
-        <p>Age: {user.age}</p>
+        {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
         <p>{getLocation(user.location)}</p>
     </div>
 var appRoot = document.getElementById("app");
