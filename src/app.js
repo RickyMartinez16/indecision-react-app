@@ -10,6 +10,13 @@ var template1 =
         <p>Age: {app.subtitle}</p>
         <p>Location: {app.location}</p>
     </div>;
+
+var user = {
+    name: "Ricky",
+    age: 32,
+    location: "Atlanta, GA"
+}
+    
     
 var template2 = 
     <div>
