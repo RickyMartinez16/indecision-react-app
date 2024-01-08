@@ -24,6 +24,11 @@ var template1 = React.createElement(
         "p",
         null,
         "app.subtitle"
+    ),
+    React.createElement(
+        "p",
+        null,
+        options.length > 0 ? "Here are your options" : "No options"
     )
 );
 
