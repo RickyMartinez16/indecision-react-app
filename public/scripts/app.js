@@ -43,7 +43,7 @@ var template2 = React.createElement(
         "Template 2"
     ),
     React.createElement(
-        "h1",
+        "h2",
         null,
         user.name
     ),
