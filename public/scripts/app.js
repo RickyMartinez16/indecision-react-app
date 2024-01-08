@@ -34,6 +34,10 @@ var user = {
     location: "Atlanta, GA"
 };
 
+function getLocation() {
+    return "Unknown";
+}
+
 var template2 = React.createElement(
     "div",
     null,
@@ -57,7 +61,7 @@ var template2 = React.createElement(
         "p",
         null,
         "Location: ",
-        user.location
+        getLocation()
     )
 );
 var appRoot = document.getElementById("app");
