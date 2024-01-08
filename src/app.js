@@ -8,7 +8,7 @@ var template1 =
     <div>
         <h1>{app.title}</h1> 
         <p>Age: {app.subtitle}</p>
-        <p>Location: {app.location}</p>
+        {app.subtitle && <p>app.subtitle</p>}
     </div>;
 
 var user = {
@@ -32,4 +32,4 @@ var template2 =
     </div>
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template2, appRoot)
+ReactDOM.render(template1, appRoot)
