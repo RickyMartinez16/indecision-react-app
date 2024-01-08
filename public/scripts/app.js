@@ -36,9 +36,12 @@ var user = {
 
 function getLocation(location) {
     if (location) {
-        return location;
-    } else {
-        return "Unknown";
+        return React.createElement(
+            "p",
+            null,
+            "Location: ",
+            location
+        );
     }
 }
 
@@ -64,7 +67,6 @@ var template2 = React.createElement(
     React.createElement(
         "p",
         null,
-        "Location: ",
         getLocation(user.location)
     )
 );
