@@ -3,7 +3,7 @@
 var app = {
     title: "Fancy App",
     subtitle: "The fanciest app you've ever seen.",
-    location: "Coming soon to a phone near you!"
+    options: ["ONE", "TWO", "THREE"]
 };
 
 var template1 = React.createElement(
