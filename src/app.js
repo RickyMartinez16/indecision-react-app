@@ -27,4 +27,4 @@ var template2 =
     </div>
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template1, appRoot)
+ReactDOM.render(template2, appRoot)
