@@ -30,8 +30,7 @@ var template1 = React.createElement(
 
 var user = {
     name: "Ricky",
-    age: 32,
-    location: "Atlanta, GA"
+    age: 32
 };
 
 function getLocation(location) {
