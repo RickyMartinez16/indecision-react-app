@@ -14,7 +14,8 @@ const template1 =
 
 
 let count = 0
-const add1 = () => console.log("fire")
+const add1 = () => console.log("add 1")
+const minus1 = () => console.log("minus 1")
 
 const template2 = 
     <div>

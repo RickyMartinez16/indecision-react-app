@@ -28,7 +28,10 @@ var template1 = React.createElement(
 
 var count = 0;
 var add1 = function add1() {
-    return console.log("fire");
+    return console.log("add 1");
+};
+var minus1 = function minus1() {
+    return console.log("minus 1");
 };
 
 var template2 = React.createElement(
