@@ -26,22 +26,7 @@ var template1 = React.createElement(
     )
 );
 
-var user = {
-    name: "Ricky",
-    age: 32,
-    location: "Atlanta, GA"
-};
-
-function getLocation(location) {
-    if (location) {
-        return React.createElement(
-            "p",
-            null,
-            "Location: ",
-            location
-        );
-    }
-}
+var count = 0;
 
 var template2 = React.createElement(
     "div",
@@ -49,26 +34,32 @@ var template2 = React.createElement(
     React.createElement(
         "h1",
         null,
-        "Template 2"
-    ),
-    React.createElement(
-        "h2",
-        null,
-        user.name ? user.name : "Anonymous"
-    ),
-    user.age && user.age >= 18 && React.createElement(
-        "p",
-        null,
-        "Age: ",
-        user.age
-    ),
-    React.createElement(
-        "p",
-        null,
-        getLocation(user.location)
+        "Count: ",
+        count
     )
 );
 
+// const user = {
+//     name: "Ricky",
+//     age: 32,
+//     location: "Atlanta, GA"
+// }
+
+// function getLocation(location){
+//     if(location){
+//         return <p>Location: {location}</p>;
+//     }
+// }
+
+// const template2 = 
+//     <div>
+//         <h1>Template 2</h1>
+//         <h2>{user.name ? user.name : "Anonymous"}</h2>
+//         {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
+//         <p>{getLocation(user.location)}</p>
+//     </div>
+
+
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template1, appRoot);
+ReactDOM.render(template2, appRoot);

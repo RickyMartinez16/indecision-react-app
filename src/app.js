@@ -11,27 +11,36 @@ const template1 =
         <p>{app.options.length > 0 ? "Here are your options:" : "No options"}</p>
     </div>;
 
-const user = {
-    name: "Ricky",
-    age: 32,
-    location: "Atlanta, GA"
-}
-    
-function getLocation(location){
-    if(location){
-        return <p>Location: {location}</p>;
-    }
-}
-    
+
+
+let count = 0
+
 const template2 = 
     <div>
-        <h1>Template 2</h1>
-        <h2>{user.name ? user.name : "Anonymous"}</h2>
-        {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
-        <p>{getLocation(user.location)}</p>
+    <h1>Count: {count}</h1>
     </div>
+
+// const user = {
+//     name: "Ricky",
+//     age: 32,
+//     location: "Atlanta, GA"
+// }
+    
+// function getLocation(location){
+//     if(location){
+//         return <p>Location: {location}</p>;
+//     }
+// }
+    
+// const template2 = 
+//     <div>
+//         <h1>Template 2</h1>
+//         <h2>{user.name ? user.name : "Anonymous"}</h2>
+//         {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
+//         <p>{getLocation(user.location)}</p>
+//     </div>
 
 
 const appRoot = document.getElementById("app");
 
-ReactDOM.render(template1, appRoot)
+ReactDOM.render(template2, appRoot)
