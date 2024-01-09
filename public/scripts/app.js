@@ -3,7 +3,7 @@
 console.log("arrow function 2");
 
 var multiplier = {
-    numbers: [1, 2, 3, 4, 5],
+    numbers: [10, 20, 30],
     multiplyBy: 3,
     multiply: function multiply() {
         var _this = this;
