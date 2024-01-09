@@ -22,6 +22,7 @@ const template2 =
     <h1>Count: {count}</h1>
     <button onClick={add1}>+1</button>
     <button onClick={minus1}>-1</button>
+    <button>RESET</button>
     </div>
 
 // const user = {

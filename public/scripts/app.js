@@ -52,6 +52,11 @@ var template2 = React.createElement(
         "button",
         { onClick: minus1 },
         "-1"
+    ),
+    React.createElement(
+        "button",
+        null,
+        "RESET"
     )
 );
 
