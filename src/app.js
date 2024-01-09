@@ -14,11 +14,12 @@ const template1 =
 
 
 let count = 0
+const add1 = () => console.log("fire")
 
 const template2 = 
     <div>
     <h1>Count: {count}</h1>
-    <button onClick={}>+1</button>
+    <button onClick={add1}>+1</button>
     </div>
 
 // const user = {
