@@ -18,6 +18,7 @@ let count = 0
 const template2 = 
     <div>
     <h1>Count: {count}</h1>
+    <button onClick={}>+1</button>
     </div>
 
 // const user = {
@@ -39,6 +40,10 @@ const template2 =
 //         {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
 //         <p>{getLocation(user.location)}</p>
 //     </div>
+
+
+
+
 
 
 const appRoot = document.getElementById("app");
