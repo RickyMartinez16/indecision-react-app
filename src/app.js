@@ -20,6 +20,7 @@ const template2 =
     <div>
     <h1>Count: {count}</h1>
     <button onClick={add1}>+1</button>
+    <button onClick={minus1}>-1</button>
     </div>
 
 // const user = {
