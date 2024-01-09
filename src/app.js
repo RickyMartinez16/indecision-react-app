@@ -16,13 +16,14 @@ const template1 =
 let count = 0
 const add1 = () => console.log("add 1")
 const minus1 = () => console.log("minus 1")
+const reset = () => console.log("reset")
 
 const template2 = 
     <div>
     <h1>Count: {count}</h1>
     <button onClick={add1}>+1</button>
     <button onClick={minus1}>-1</button>
-    <button>RESET</button>
+    <button onClick={reset}>RESET</button>
     </div>
 
 // const user = {

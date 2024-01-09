@@ -33,6 +33,9 @@ var add1 = function add1() {
 var minus1 = function minus1() {
     return console.log("minus 1");
 };
+var reset = function reset() {
+    return console.log("reset");
+};
 
 var template2 = React.createElement(
     "div",
@@ -55,7 +58,7 @@ var template2 = React.createElement(
     ),
     React.createElement(
         "button",
-        null,
+        { onClick: reset },
         "RESET"
     )
 );
