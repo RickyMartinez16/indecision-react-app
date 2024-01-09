@@ -28,7 +28,8 @@ var template1 = React.createElement(
 
 var count = 0;
 var add1 = function add1() {
-    return console.log("add 1");
+    count++;
+    renderCounterApp();
 };
 var minus1 = function minus1() {
     return console.log("minus 1");
@@ -37,53 +38,36 @@ var reset = function reset() {
     return console.log("reset");
 };
 
-var template2 = React.createElement(
-    "div",
-    null,
-    React.createElement(
-        "h1",
+var renderCounterApp = function renderCounterApp() {
+    var template2 = React.createElement(
+        "div",
         null,
-        "Count: ",
-        count
-    ),
-    React.createElement(
-        "button",
-        { onClick: add1 },
-        "+1"
-    ),
-    React.createElement(
-        "button",
-        { onClick: minus1 },
-        "-1"
-    ),
-    React.createElement(
-        "button",
-        { onClick: reset },
-        "RESET"
-    )
-);
+        React.createElement(
+            "h1",
+            null,
+            "Count: ",
+            count
+        ),
+        React.createElement(
+            "button",
+            { onClick: add1 },
+            "+1"
+        ),
+        React.createElement(
+            "button",
+            { onClick: minus1 },
+            "-1"
+        ),
+        React.createElement(
+            "button",
+            { onClick: reset },
+            "RESET"
+        )
+    );
 
-// const user = {
-//     name: "Ricky",
-//     age: 32,
-//     location: "Atlanta, GA"
-// }
-
-// function getLocation(location){
-//     if(location){
-//         return <p>Location: {location}</p>;
-//     }
-// }
-
-// const template2 = 
-//     <div>
-//         <h1>Template 2</h1>
-//         <h2>{user.name ? user.name : "Anonymous"}</h2>
-//         {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
-//         <p>{getLocation(user.location)}</p>
-//     </div>
-
+    ReactDOM.render(template2, appRoot);
+};
 
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(template2, appRoot);
+renderCounterApp();
