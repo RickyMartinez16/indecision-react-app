@@ -32,10 +32,12 @@ var add1 = function add1() {
     renderCounterApp();
 };
 var minus1 = function minus1() {
-    return console.log("minus 1");
+    count--;
+    renderCounterApp();
 };
 var reset = function reset() {
-    return console.log("reset");
+    count = 0;
+    renderCounterApp();
 };
 
 var renderCounterApp = function renderCounterApp() {

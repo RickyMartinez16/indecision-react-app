@@ -18,8 +18,14 @@ const add1 = () => {
     count++
     renderCounterApp()
 }
-const minus1 = () => console.log("minus 1")
-const reset = () => console.log("reset")
+const minus1 = () => {
+    count--
+    renderCounterApp()
+}
+const reset = () => {
+    count = 0
+    renderCounterApp()
+}
 
 
 const renderCounterApp = () => {
@@ -33,8 +39,6 @@ const renderCounterApp = () => {
 
     ReactDOM.render(template2, appRoot)
 }
-
-
 
 const appRoot = document.getElementById("app");
 
