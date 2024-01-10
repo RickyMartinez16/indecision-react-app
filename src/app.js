@@ -13,6 +13,10 @@ const template1 =
             <li>Option 1</li>
             <li>Option 2</li>
         </ol>
+        <form>
+            <input type="text" name="option"></input>
+            <button>Add option</button>
+        </form>
     </div>;
 
 const appRoot = document.getElementById("app");
