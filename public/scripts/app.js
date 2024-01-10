@@ -60,7 +60,6 @@ var renderApp = function renderApp() {
                 return React.createElement(
                     "li",
                     { key: option },
-                    "Option: ",
                     option
                 );
             })
