@@ -44,9 +44,9 @@ var renderApp = function renderApp() {
             app.options.length > 0 ? "Here are your options:" : "No options"
         ),
         React.createElement(
-            "p",
+            "button",
             null,
-            app.options.length
+            "What Should I do?"
         ),
         React.createElement(
             "button",

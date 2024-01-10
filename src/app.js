@@ -28,7 +28,7 @@ const renderApp = () => {
         <h1>{app.title}</h1> 
         {app.subtitle && <p>{app.subtitle}</p>}
         <p>{app.options.length > 0 ? "Here are your options:" : "No options"}</p>
-        <p>{app.options.length}</p>
+        <button>What Should I do?</button>
         <button onClick={clearOptions}>Remove All</button>
         <ol>
             {
