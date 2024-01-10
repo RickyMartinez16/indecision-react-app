@@ -3,7 +3,7 @@
 var app = {
     title: "Fancy App",
     subtitle: "The fanciest app you've ever seen.",
-    options: ["ONE", "TWO", "THREE"]
+    options: []
 };
 
 var template1 = React.createElement(
@@ -23,6 +23,11 @@ var template1 = React.createElement(
         "p",
         null,
         app.options.length > 0 ? "Here are your options:" : "No options"
+    ),
+    React.createElement(
+        "p",
+        null,
+        app.options.length
     ),
     React.createElement(
         "ol",
