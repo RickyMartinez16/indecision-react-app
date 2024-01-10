@@ -24,8 +24,10 @@ var clearOptions = function clearOptions() {
     renderApp();
 };
 
-var whatShouldIDo = function whatShouldIDo() {
+var onWhatShouldIDo = function onWhatShouldIDo() {
     var randomNum = Math.floor(Math.random() * app.options.length);
+    var option = app.options[randomNum];
+    alert(option);
 };
 
 var renderApp = function renderApp() {

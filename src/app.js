@@ -22,8 +22,10 @@ const clearOptions = () => {
     renderApp()
 }
 
-const whatShouldIDo = () => {
-    const randomNum = Math.floor(Math.random() * app.options.length)
+const onWhatShouldIDo = () => {
+    const randomNum = Math.floor(Math.random() * app.options.length);
+    const option = app.options[randomNum]
+    alert(option)
 }
 
 const renderApp = () => {
