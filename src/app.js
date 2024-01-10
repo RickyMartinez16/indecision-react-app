@@ -22,13 +22,17 @@ const clearOptions = () => {
     renderApp()
 }
 
+const whatShouldIDo = () => {
+    const randomNum = Math.floor(Math.random() * app.options.length)
+}
+
 const renderApp = () => {
     const template1 = 
     <div>
         <h1>{app.title}</h1> 
         {app.subtitle && <p>{app.subtitle}</p>}
         <p>{app.options.length > 0 ? "Here are your options:" : "No options"}</p>
-        <button>What Should I do?</button>
+        <button onClick={onWhatShouldIDo}>What Should I do?</button>
         <button onClick={clearOptions}>Remove All</button>
         <ol>
             {

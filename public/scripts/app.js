@@ -24,6 +24,10 @@ var clearOptions = function clearOptions() {
     renderApp();
 };
 
+var whatShouldIDo = function whatShouldIDo() {
+    var randomNum = Math.floor(Math.random() * app.options.length);
+};
+
 var renderApp = function renderApp() {
     var template1 = React.createElement(
         "div",
@@ -45,7 +49,7 @@ var renderApp = function renderApp() {
         ),
         React.createElement(
             "button",
-            null,
+            { onClick: onWhatShouldIDo },
             "What Should I do?"
         ),
         React.createElement(
