@@ -4,7 +4,21 @@ const app = {
     options: []
 }
 
-const template1 = 
+const onFormSubmit = (e) => {
+    e.preventDefault();
+
+    const option = e.target.elements.option.value
+
+    if(option){
+        app.options.push(option)
+        e.target.elements.option.value = " "
+    }
+
+    renderApp()
+}
+
+const renderApp = () => {
+    const template1 = 
     <div>
         <h1>{app.title}</h1> 
         {app.subtitle && <p>{app.subtitle}</p>}
@@ -14,11 +28,16 @@ const template1 =
             <li>Option 1</li>
             <li>Option 2</li>
         </ol>
-        <form>
+        <form onSubmit={onFormSubmit}>
             <input type="text" name="option"></input>
             <button>Add option</button>
         </form>
     </div>;
 
+    ReactDOM.render(template1, appRoot)
+}
+
+
 const appRoot = document.getElementById("app");
-ReactDOM.render(template1, appRoot)
+
+renderApp();
