@@ -27,3 +27,4 @@ var template1 = React.createElement(
 );
 
 var appRoot = document.getElementById("app");
+ReactDOM.render(template1, appRoot);

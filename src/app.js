@@ -12,3 +12,4 @@ const template1 =
     </div>;
 
 const appRoot = document.getElementById("app");
+ReactDOM.render(template1, appRoot)
