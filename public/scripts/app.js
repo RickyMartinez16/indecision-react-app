@@ -23,6 +23,20 @@ var template1 = React.createElement(
         "p",
         null,
         app.options.length > 0 ? "Here are your options:" : "No options"
+    ),
+    React.createElement(
+        "ol",
+        null,
+        React.createElement(
+            "li",
+            null,
+            "Option 1"
+        ),
+        React.createElement(
+            "li",
+            null,
+            "Option 2"
+        )
     )
 );
 
