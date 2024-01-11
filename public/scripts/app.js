@@ -99,8 +99,8 @@ var Traveler = function (_Person2) {
     return Traveler;
 }(Person);
 
-var me = new Student("Ricky Martinez", 32, "English");
+var me = new Traveler("Ricky Martinez", 32, "New Jersey");
 console.log(me.getDescription());
 
-var other = new Student();
+var other = new Traveler();
 console.log(other.getDescription());

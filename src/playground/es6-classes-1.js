@@ -54,9 +54,9 @@ class Traveler extends Person{
 }
 
 
-const me = new Student("Ricky Martinez", 32, "English")
+const me = new Traveler("Ricky Martinez", 32, "New Jersey")
 console.log(me.getDescription())
 
-const other = new Student()
+const other = new Traveler()
 console.log(other.getDescription())
 
