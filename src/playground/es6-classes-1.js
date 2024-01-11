@@ -6,5 +6,6 @@ class Person {
     getGreeting(){
         return `Hi I am ${this.name} !`
     }
-
 }
+
+const me = new Person("Ricky Martinez")
