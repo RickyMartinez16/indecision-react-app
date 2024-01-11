@@ -28,7 +28,7 @@ var Person = function () {
     return Person;
 }();
 
-var me = new Person("Ricky Martinez");
+var me = new Person("Ricky Martinez", 32);
 console.log(me.getGreeting());
 
 var other = new Person();

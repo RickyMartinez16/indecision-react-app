@@ -13,7 +13,7 @@ class Person {
     }
 }
 
-const me = new Person("Ricky Martinez")
+const me = new Person("Ricky Martinez", 32)
 console.log(me.getGreeting());
 
 const other = new Person()
