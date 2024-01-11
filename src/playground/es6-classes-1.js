@@ -9,3 +9,7 @@ class Person {
 }
 
 const me = new Person("Ricky Martinez")
+console.log(me.getGreeting());
+
+const other = new Person()
+console.log(other.getGreeting())
