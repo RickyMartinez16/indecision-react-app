@@ -58,7 +58,7 @@ var Student = function (_Person) {
             var description = _get(Student.prototype.__proto__ || Object.getPrototypeOf(Student.prototype), "getDescription", this).call(this);
 
             if (this.hasMajor()) {
-                description += "Their major is " + this.major;
+                description += "Their major is " + this.major + ". ";
             }
 
             return description;
@@ -89,6 +89,10 @@ var Traveler = function (_Person2) {
         key: "getDescription",
         value: function getDescription() {
             var description = _get(Traveler.prototype.__proto__ || Object.getPrototypeOf(Traveler.prototype), "getDescription", this).call(this);
+
+            if (this.hasHomeLocation()) {
+                description += "Their home location is " + this.homeLocation;
+            }
         }
     }]);
 

@@ -26,7 +26,7 @@ class Student extends Person {
         let description = super.getDescription()
 
         if(this.hasMajor()){
-            description +=  `Their major is ${this.major}`
+            description +=  `Their major is ${this.major}. `
         }
 
         return description
@@ -45,7 +45,12 @@ class Traveler extends Person{
 
     getDescription(){
         let description = super.getDescription()
+
+        if(this.hasHomeLocation()){
+            description += `Their home location is ${this.homeLocation}`
+        }
     }
+
 }
 
 
