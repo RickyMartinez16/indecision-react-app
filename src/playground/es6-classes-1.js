@@ -33,6 +33,18 @@ class Student extends Person {
     }
 }
 
+class Traveler extends Person{
+    constructor(name, age, homeLocation){
+        super(name, age)
+        this.homeLocation = homeLocation
+    }
+
+    hasHomeLocation(){
+        return !!this.homeLocation
+    }
+}
+
+
 const me = new Student("Ricky Martinez", 32, "English")
 console.log(me.getDescription())
 

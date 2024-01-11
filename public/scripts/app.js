@@ -68,6 +68,28 @@ var Student = function (_Person) {
     return Student;
 }(Person);
 
+var Traveler = function (_Person2) {
+    _inherits(Traveler, _Person2);
+
+    function Traveler(name, age, homeLocation) {
+        _classCallCheck(this, Traveler);
+
+        var _this2 = _possibleConstructorReturn(this, (Traveler.__proto__ || Object.getPrototypeOf(Traveler)).call(this, name, age));
+
+        _this2.homeLocation = homeLocation;
+        return _this2;
+    }
+
+    _createClass(Traveler, [{
+        key: "hasHomeLocation",
+        value: function hasHomeLocation() {
+            return !!this.homeLocation;
+        }
+    }]);
+
+    return Traveler;
+}(Person);
+
 var me = new Student("Ricky Martinez", 32, "English");
 console.log(me.getDescription());
 
