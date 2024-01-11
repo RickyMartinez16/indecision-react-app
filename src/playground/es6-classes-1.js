@@ -8,8 +8,18 @@ class Person {
         return `Hi I am ${this.name} !`
     }
 
-    getDescription(){
+    getDescription() {
         return `${this.name} is ${this.age} years old`
+    }
+}
+
+class Student extends Person {
+    constructor(name, age, major){
+        super(name, age)
+        this.major = major
+    }
+    hasMajor(){
+        return !!this.major
     }
 }
 
