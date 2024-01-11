@@ -23,7 +23,7 @@ var Person = function () {
     _createClass(Person, [{
         key: "getGreeting",
         value: function getGreeting() {
-            return "Hi I am " + this.name + " !";
+            return "Hi I am " + this.name + "! ";
         }
     }, {
         key: "getDescription",
@@ -86,13 +86,15 @@ var Traveler = function (_Person2) {
             return !!this.homeLocation;
         }
     }, {
-        key: "getDescription",
-        value: function getDescription() {
-            var description = _get(Traveler.prototype.__proto__ || Object.getPrototypeOf(Traveler.prototype), "getDescription", this).call(this);
+        key: "getGreeting",
+        value: function getGreeting() {
+            var greeting = _get(Traveler.prototype.__proto__ || Object.getPrototypeOf(Traveler.prototype), "getGreeting", this).call(this);
 
             if (this.hasHomeLocation()) {
-                description += "Their home location is " + this.homeLocation;
+                greeting += "I'm visiting from " + this.homeLocation;
             }
+
+            return greeting;
         }
     }]);
 
@@ -100,7 +102,7 @@ var Traveler = function (_Person2) {
 }(Person);
 
 var me = new Traveler("Ricky Martinez", 32, "New Jersey");
-console.log(me.getDescription());
+console.log(me.getGreeting());
 
 var other = new Traveler();
-console.log(other.getDescription());
+console.log(other.getGreeting());

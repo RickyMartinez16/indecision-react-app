@@ -5,7 +5,7 @@ class Person {
     }
 
     getGreeting(){
-        return `Hi I am ${this.name} !`
+        return `Hi I am ${this.name}! `
     }
 
     getDescription() {
@@ -43,20 +43,22 @@ class Traveler extends Person{
         return !!this.homeLocation
     }
 
-    getDescription(){
-        let description = super.getDescription()
+    getGreeting(){
+        let greeting = super.getGreeting()
 
         if(this.hasHomeLocation()){
-            description += `Their home location is ${this.homeLocation}`
+            greeting += `I'm visiting from ${this.homeLocation}`
         }
+
+        return greeting
     }
 
 }
 
 
 const me = new Traveler("Ricky Martinez", 32, "New Jersey")
-console.log(me.getDescription())
+console.log(me.getGreeting())
 
 const other = new Traveler()
-console.log(other.getDescription())
+console.log(other.getGreeting())
 
