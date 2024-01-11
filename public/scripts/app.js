@@ -60,6 +60,8 @@ var Student = function (_Person) {
             if (this.hasMajor()) {
                 description += "Their major is " + this.major;
             }
+
+            return description;
         }
     }]);
 
