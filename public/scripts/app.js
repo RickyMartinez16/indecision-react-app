@@ -18,6 +18,11 @@ var Person = function () {
         value: function getGreeting() {
             return "Hi I am " + this.name + " !";
         }
+    }, {
+        key: "getDescription",
+        value: function getDescription() {
+            return this.name + " is " + this.age + " years old";
+        }
     }]);
 
     return Person;
