@@ -30,6 +30,8 @@ var Person = function () {
 
 var me = new Person("Ricky Martinez", 32);
 console.log(me.getGreeting());
+console.log(me.getDescription());
 
 var other = new Person();
 console.log(other.getGreeting());
+console.log(other.getDescription());

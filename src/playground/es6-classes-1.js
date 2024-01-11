@@ -15,7 +15,9 @@ class Person {
 
 const me = new Person("Ricky Martinez", 32)
 console.log(me.getGreeting());
+console.log(me.getDescription())
 
 const other = new Person()
 console.log(other.getGreeting())
+console.log(other.getDescription())
 
