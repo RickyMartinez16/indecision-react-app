@@ -85,6 +85,11 @@ var Traveler = function (_Person2) {
         value: function hasHomeLocation() {
             return !!this.homeLocation;
         }
+    }, {
+        key: "getDescription",
+        value: function getDescription() {
+            var description = _get(Traveler.prototype.__proto__ || Object.getPrototypeOf(Traveler.prototype), "getDescription", this).call(this);
+        }
     }]);
 
     return Traveler;

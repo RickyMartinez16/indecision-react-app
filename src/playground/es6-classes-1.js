@@ -42,6 +42,10 @@ class Traveler extends Person{
     hasHomeLocation(){
         return !!this.homeLocation
     }
+
+    getDescription(){
+        let description = super.getDescription()
+    }
 }
 
 
