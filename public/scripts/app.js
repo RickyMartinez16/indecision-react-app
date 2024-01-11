@@ -28,7 +28,7 @@ var Person = function () {
     }, {
         key: "getDescription",
         value: function getDescription() {
-            return this.name + " is " + this.age + " years old";
+            return this.name + " is " + this.age + " years old. ";
         }
     }]);
 
@@ -68,10 +68,10 @@ var Student = function (_Person) {
     return Student;
 }(Person);
 
-var me = new Person("Ricky Martinez", 32);
-console.log(me.getGreeting());
+var me = new Student("Ricky Martinez", 32, "English");
+
 console.log(me.getDescription());
 
-var other = new Person();
-console.log(other.getGreeting());
+var other = new Student();
+
 console.log(other.getDescription());

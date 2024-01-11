@@ -9,7 +9,7 @@ class Person {
     }
 
     getDescription() {
-        return `${this.name} is ${this.age} years old`
+        return `${this.name} is ${this.age} years old. `
     }
 }
 
@@ -33,11 +33,11 @@ class Student extends Person {
     }
 }
 
-const me = new Person("Ricky Martinez", 32)
-console.log(me.getGreeting());
+const me = new Student("Ricky Martinez", 32, "English")
+
 console.log(me.getDescription())
 
-const other = new Person()
-console.log(other.getGreeting())
+const other = new Student()
+
 console.log(other.getDescription())
 
