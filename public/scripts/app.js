@@ -7,10 +7,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Person = function () {
     function Person() {
         var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "Anonymous";
+        var age = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 
         _classCallCheck(this, Person);
 
-        this.name = name, this.age = 0;
+        this.name = name, this.age = age;
     }
 
     _createClass(Person, [{

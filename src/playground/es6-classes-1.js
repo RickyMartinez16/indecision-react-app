@@ -1,7 +1,7 @@
 class Person {
-    constructor(name = "Anonymous"){
+    constructor(name = "Anonymous", age = 0){
         this.name = name,
-        this.age = 0
+        this.age = age
     }
 
     getGreeting(){
