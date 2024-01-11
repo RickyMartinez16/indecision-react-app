@@ -34,10 +34,8 @@ class Student extends Person {
 }
 
 const me = new Student("Ricky Martinez", 32, "English")
-
 console.log(me.getDescription())
 
 const other = new Student()
-
 console.log(other.getDescription())
 

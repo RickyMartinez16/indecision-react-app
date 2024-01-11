@@ -69,9 +69,7 @@ var Student = function (_Person) {
 }(Person);
 
 var me = new Student("Ricky Martinez", 32, "English");
-
 console.log(me.getDescription());
 
 var other = new Student();
-
 console.log(other.getDescription());
