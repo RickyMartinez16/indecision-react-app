@@ -176,6 +176,12 @@ var AddOption = function (_React$Component6) {
             e.preventDefault();
 
             var option = e.target.elements.option.value;
+
+            if (option) {
+                alert(option);
+            }
+
+            render();
         }
     }, {
         key: "render",

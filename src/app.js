@@ -73,6 +73,12 @@ class AddOption extends React.Component{
         e.preventDefault();
         
         const option = e.target.elements.option.value
+
+        if(option){
+            alert(option)
+        }
+
+        render()
     }
 
     render(){
