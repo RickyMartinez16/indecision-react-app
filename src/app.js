@@ -69,7 +69,7 @@ class Option extends React.Component{
 }
 
 class AddOption extends React.Component{
-    handleAddOption(){
+    handleAddOption(e){
         e.preventDefault();
         
         const option = e.target.elements.option.value
@@ -79,7 +79,7 @@ class AddOption extends React.Component{
             e.target.elements.option.value = " "
         }
 
-        render()
+        // render()
     }
 
     render(){
