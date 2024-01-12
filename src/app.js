@@ -86,7 +86,7 @@ class AddOption extends React.Component{
         return (
             <div>
             <form onSubmit={this.handleAddOption}>
-                <input type="text"></input>
+                <input type="text" name="option"></input>
                 <button>Add Option</button>
             </form>
             </div>
