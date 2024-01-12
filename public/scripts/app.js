@@ -20,7 +20,15 @@ var Counter = function (_React$Component) {
     _createClass(Counter, [{
         key: "render",
         value: function render() {
-            React.createElement("div", null);
+            return React.createElement(
+                "div",
+                null,
+                React.createElement(
+                    "h1",
+                    null,
+                    "Count: "
+                )
+            );
         }
     }]);
 
