@@ -181,8 +181,6 @@ var AddOption = function (_React$Component6) {
                 alert(option);
                 e.target.elements.option.value = " ";
             }
-
-            // render()
         }
     }, {
         key: "render",

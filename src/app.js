@@ -78,8 +78,6 @@ class AddOption extends React.Component{
             alert(option);
             e.target.elements.option.value = " "
         }
-
-        // render()
     }
 
     render(){
