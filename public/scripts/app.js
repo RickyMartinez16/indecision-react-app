@@ -171,6 +171,11 @@ var AddOption = function (_React$Component6) {
     }
 
     _createClass(AddOption, [{
+        key: "handleAddOption",
+        value: function handleAddOption() {
+            alert("handle add option");
+        }
+    }, {
         key: "render",
         value: function render() {
             return React.createElement(
@@ -178,7 +183,7 @@ var AddOption = function (_React$Component6) {
                 null,
                 React.createElement(
                     "form",
-                    { onSubmit: handleAddOption },
+                    { onSubmit: this.handleAddOption },
                     React.createElement("input", { type: "text" })
                 ),
                 React.createElement(
