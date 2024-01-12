@@ -70,7 +70,9 @@ class Option extends React.Component{
 
 class AddOption extends React.Component{
     handleAddOption(){
-        alert("handle add option")
+        e.preventDefault();
+        
+        const option = e.target.elements.option.value
     }
 
     render(){

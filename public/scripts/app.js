@@ -173,7 +173,9 @@ var AddOption = function (_React$Component6) {
     _createClass(AddOption, [{
         key: "handleAddOption",
         value: function handleAddOption() {
-            alert("handle add option");
+            e.preventDefault();
+
+            var option = e.target.elements.option.value;
         }
     }, {
         key: "render",
