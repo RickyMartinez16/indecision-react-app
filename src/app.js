@@ -75,7 +75,8 @@ class AddOption extends React.Component{
         const option = e.target.elements.option.value
 
         if(option){
-            alert(option)
+            alert(option);
+            e.target.elements.option.value = " "
         }
 
         render()

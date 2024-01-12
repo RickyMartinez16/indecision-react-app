@@ -179,6 +179,7 @@ var AddOption = function (_React$Component6) {
 
             if (option) {
                 alert(option);
+                e.target.elements.option.value = " ";
             }
 
             render();
