@@ -177,6 +177,11 @@ var AddOption = function (_React$Component6) {
                 "div",
                 null,
                 React.createElement(
+                    "form",
+                    { onSubmit: handleAddOption },
+                    React.createElement("input", { type: "text" })
+                ),
+                React.createElement(
                     "p",
                     null,
                     "Here is where you add an option"
