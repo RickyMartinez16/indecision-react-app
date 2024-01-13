@@ -148,8 +148,7 @@ var Options = function Options(props) {
                 optionText: option,
                 handleDeleteOption: props.handleDeleteOption
             });
-        }),
-        React.createElement(Option, null)
+        })
     );
 };
 
