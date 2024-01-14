@@ -33,7 +33,7 @@ class IndecisionApp extends React.Component{
         //     }
         // })
 
-        this.setState(() => ({options: prevState.options.concat([option])}))
+        this.setState((prevState) => ({options: prevState.options.concat([option])}))
     }
 
     render(){
@@ -129,7 +129,7 @@ class AddOption extends React.Component{
         //     }
         // })
 
-        this.setState(() => error)
+        this.setState(() => ({error}))
 
         e.target.elements.option.value = " "
         
