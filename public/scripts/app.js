@@ -145,7 +145,9 @@ var Options = function Options(props) {
         props.options.map(function (option) {
             return React.createElement(Option, {
                 key: option,
-                optionText: option });
+                optionText: option,
+                handleDeleteOption: props.handleDeleteOption
+            });
         }),
         React.createElement(Option, null)
     );
@@ -155,7 +157,12 @@ var Option = function Option(props) {
     return React.createElement(
         "div",
         null,
-        props.optionText
+        props.optionText,
+        React.createElement(
+            "button",
+            null,
+            "Remove"
+        )
     );
 };
 
