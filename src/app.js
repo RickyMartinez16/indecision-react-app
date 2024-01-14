@@ -13,7 +13,7 @@ class IndecisionApp extends React.Component{
         this.setState(() => ({options: []}))
     }
 
-    
+
     handlePick(){
         const randomNum = Math.floor(Math.random() * this.state.options.length);
         const option = this.state.options[randomNum]
@@ -121,11 +121,13 @@ class AddOption extends React.Component{
         const option = e.target.elements.option.value.trim()
         const error = this.props.handleAddOption(option);
 
-        this.setState(() => {
-            return {
-                error
-            }
-        })
+        // this.setState(() => {
+        //     return {
+        //         error
+        //     }
+        // })
+
+        this.setState(() => error)
 
         e.target.elements.option.value = " "
         
