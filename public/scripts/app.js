@@ -35,7 +35,7 @@ var IndecisionApp = function (_React$Component) {
     }, {
         key: "handleDeleteOption",
         value: function handleDeleteOption(option) {
-            alert("handle delete option" + option);
+            alert("handle delete option " + option);
         }
     }, {
         key: "handlePick",
