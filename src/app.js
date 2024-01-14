@@ -116,7 +116,7 @@ const Option = (props) => {
     return (
         <div>
         {props.optionText}
-        <button>Remove</button>
+        <button onClick={props.handleDeleteOption}>Remove</button>
         </div>
     )
 }
