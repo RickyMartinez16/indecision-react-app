@@ -143,7 +143,9 @@ var Options = function Options(props) {
             "Remove All Options"
         ),
         props.options.map(function (option) {
-            return React.createElement(Option, { key: option, optionText: option });
+            return React.createElement(Option, {
+                key: option,
+                optionText: option });
         }),
         React.createElement(Option, null)
     );
