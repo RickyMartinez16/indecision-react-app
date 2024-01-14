@@ -14,7 +14,7 @@ class IndecisionApp extends React.Component{
     }
 
     handleDeleteOption(option){
-
+        alert("handle delete option" + option)
     }
 
 
