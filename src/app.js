@@ -1,6 +1,3 @@
-const title = "Indecision App";
-const subTitle = "Put your life in the hands of a computer beep bop";
-
 class IndecisionApp extends React.Component{
     constructor(props){
         super(props);
@@ -41,6 +38,10 @@ class IndecisionApp extends React.Component{
     }
 
     render(){
+    
+    const title = "Indecision App";
+    const subTitle = "Put your life in the hands of a computer beep bop";
+    
         return(
             <div>
             <Header title={title} subTitle={subTitle}/>
