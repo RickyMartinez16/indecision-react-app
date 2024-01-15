@@ -41,10 +41,10 @@ class IndecisionApp extends React.Component{
     
     const title = "Indecision App";
     const subTitle = "Put your life in the hands of a computer beep bop";
-    
+
         return(
             <div>
-            <Header title={title} subTitle={subTitle}/>
+            <Header subTitle={subTitle}/>
             <Action 
                 hasOptions={this.state.options.length > 0}
                 handlePick={this.handlePick}
@@ -68,6 +68,10 @@ const Header = (props) => {
             <h2>{props.subTitle}</h2>
         </div>
     )
+}
+
+Header.defaultProps = {
+    title: "Indecision App"
 }
 
 const Action = (props) => {
