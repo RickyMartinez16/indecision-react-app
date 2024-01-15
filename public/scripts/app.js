@@ -60,7 +60,6 @@ var IndecisionApp = function (_React$Component) {
         key: "render",
         value: function render() {
 
-            var title = "Indecision App";
             var subTitle = "Put your life in the hands of a computer beep bop";
 
             return React.createElement(
