@@ -133,7 +133,7 @@ const Options = (props) => {
 //     }
 // }
 
-const Option = () => {
+const Option = (props) => {
     return (
         <div>
         {this.props.optionText}
