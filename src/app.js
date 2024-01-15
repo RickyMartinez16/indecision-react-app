@@ -106,6 +106,18 @@ const Action = (props) => {
 //     }
 // }
 
+const Options = () => {
+    return (
+        <div>
+        <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
+        {this.props.options.map((option) => {
+            return <Option key={option} optionText={option}/>
+        })}
+        <Option />
+        </div>
+    )
+}
+
 class Options extends React.Component{
 
     render(){
