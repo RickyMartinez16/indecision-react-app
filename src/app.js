@@ -136,7 +136,7 @@ const Options = (props) => {
 const Option = (props) => {
     return (
         <div>
-        {this.props.optionText}
+        {props.optionText}
         </div>
     )
 }
