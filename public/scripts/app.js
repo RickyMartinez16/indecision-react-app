@@ -112,15 +112,15 @@ var Header = function Header(props) {
 //     }
 // }
 
-var Action = function Action() {
+var Action = function Action(props) {
     return React.createElement(
         "div",
         null,
         React.createElement(
             "button",
             {
-                onClick: undefined.props.handlePick,
-                disabled: !undefined.props.hasOptions
+                onClick: props.handlePick,
+                disabled: !props.hasOptions
             },
             "What Should I Do?"
         )
