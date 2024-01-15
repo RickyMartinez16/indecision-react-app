@@ -157,21 +157,6 @@ var Options = function Options(props) {
     );
 };
 
-// class Options extends React.Component{
-
-//     render(){
-//         return (
-//             <div>
-//             <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
-//             {this.props.options.map((option) => {
-//                 return <Option key={option} optionText={option}/>
-//             })}
-//             <Option />
-//             </div>
-//         )
-//     }
-// }
-
 var Option = function Option(props) {
     return React.createElement(
         "div",
