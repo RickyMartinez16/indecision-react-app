@@ -141,7 +141,7 @@ var Action = function Action(props) {
 //     }
 // }
 
-var Options = function Options() {
+var Options = function Options(props) {
     return React.createElement(
         "div",
         null,

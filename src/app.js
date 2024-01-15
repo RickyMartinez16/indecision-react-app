@@ -106,7 +106,7 @@ const Action = (props) => {
 //     }
 // }
 
-const Options = () => {
+const Options = (props) => {
     return (
         <div>
         <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
