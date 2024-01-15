@@ -127,20 +127,6 @@ var Action = function Action(props) {
     );
 };
 
-// class Action extends React.Component{
-//     render(){
-//         return (
-//             <div>
-//             <button 
-//                 onClick={this.props.handlePick}
-//                 disabled={!this.props.hasOptions}
-//             >
-//             What Should I Do?</button>
-//             </div>
-//         )
-//     }
-// }
-
 var Options = function Options(props) {
     return React.createElement(
         "div",
