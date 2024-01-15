@@ -109,8 +109,8 @@ const Action = (props) => {
 const Options = (props) => {
     return (
         <div>
-        <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
-        {this.props.options.map((option) => {
+        <button onClick={props.handleDeleteOptions}>Remove All Options</button>
+        {props.options.map((option) => {
             return <Option key={option} optionText={option}/>
         })}
         <Option />

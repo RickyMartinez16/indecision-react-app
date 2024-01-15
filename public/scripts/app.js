@@ -147,10 +147,10 @@ var Options = function Options(props) {
         null,
         React.createElement(
             "button",
-            { onClick: undefined.props.handleDeleteOptions },
+            { onClick: props.handleDeleteOptions },
             "Remove All Options"
         ),
-        undefined.props.options.map(function (option) {
+        props.options.map(function (option) {
             return React.createElement(Option, { key: option, optionText: option });
         }),
         React.createElement(Option, null)
