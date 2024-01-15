@@ -118,20 +118,20 @@ const Options = () => {
     )
 }
 
-class Options extends React.Component{
+// class Options extends React.Component{
 
-    render(){
-        return (
-            <div>
-            <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
-            {this.props.options.map((option) => {
-                return <Option key={option} optionText={option}/>
-            })}
-            <Option />
-            </div>
-        )
-    }
-}
+//     render(){
+//         return (
+//             <div>
+//             <button onClick={this.props.handleDeleteOptions}>Remove All Options</button>
+//             {this.props.options.map((option) => {
+//                 return <Option key={option} optionText={option}/>
+//             })}
+//             <Option />
+//             </div>
+//         )
+//     }
+// }
 
 class Option extends React.Component{
     render(){
