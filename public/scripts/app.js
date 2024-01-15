@@ -180,16 +180,6 @@ var Option = function Option(props) {
     );
 };
 
-// class Option extends React.Component{
-//     render(){
-//         return (
-//             <div>
-//             {this.props.optionText}
-//             </div>
-//         )
-//     }
-// }
-
 var AddOption = function (_React$Component2) {
     _inherits(AddOption, _React$Component2);
 
