@@ -92,8 +92,6 @@ class IndecisionApp extends React.Component{
     }
 }
 
-
-
 const Header = (props) => {
     return(
         <div>
