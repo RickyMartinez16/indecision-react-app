@@ -127,10 +127,6 @@ var IndecisionApp = function (_React$Component) {
     return IndecisionApp;
 }(React.Component);
 
-IndecisionApp.defaultProps = {
-    options: []
-};
-
 var Header = function Header(props) {
     return React.createElement(
         "div",

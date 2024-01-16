@@ -92,9 +92,7 @@ class IndecisionApp extends React.Component{
     }
 }
 
-IndecisionApp.defaultProps = {
-    options: []
-}
+
 
 const Header = (props) => {
     return(
