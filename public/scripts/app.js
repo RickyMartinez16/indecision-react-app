@@ -32,6 +32,14 @@ var IndecisionApp = function (_React$Component) {
             console.log("comp did mount");
         }
     }, {
+        key: "componentDidUpdate",
+        value: function componentDidUpdate(prevProps, prevState) {
+            console.log("comp did update");
+        }
+    }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {}
+    }, {
         key: "handleDeleteOptions",
         value: function handleDeleteOptions() {
             this.setState(function () {
