@@ -9,4 +9,4 @@ console.log("app.js is running")
 
 console.log(isAdult(19))
 console.log(canDrink(22))
-console.log(isSenior(65))
+console.log(isSenior(64))
