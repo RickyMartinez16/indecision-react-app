@@ -2,3 +2,5 @@ node_modules
 package.json
 yarn.lock
 package-lock.json
+webpack.config.js
+bundle.js
