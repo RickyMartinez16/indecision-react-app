@@ -32,13 +32,13 @@ class IndecisionApp extends React.Component{
     componentDidUpdate(prevProps, prevState){
         if(prevState.options.length !== this.state.options.length){
             const json = JSON.stringify(this.state.options)
-            console.log("comp did update")
+            // console.log("comp did update")
             localStorage.setItem("options", json)
         }
     }
 
     componentWillUnmount(){
-        console.log("comp will unmount")
+        // console.log("comp will unmount")
     }
 
     handleDeleteOptions(){
