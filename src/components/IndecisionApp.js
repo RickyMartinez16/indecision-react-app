@@ -7,24 +7,23 @@ import Options from "./Options"
 class IndecisionApp extends React.Component{
     state = {
         options: []
-    }
+    };
 
     handleDeleteOptions = () => {
         this.setState(() => ({options: []}))
-    }
+    };
 
     handleDeleteOption = (optionToRemove) => {
         this.setState((prevState) => ({
             options: prevState.options.filter((option) => optionToRemove !== option)
         }))
-    }
-
+    };
 
     handlePick = () => {
         const randomNum = Math.floor(Math.random() * this.state.options.length);
         const option = this.state.options[randomNum]
         alert(option)
-    }
+    };
 
     handleAddOption = (option) => {
         if(!option){
@@ -34,7 +33,7 @@ class IndecisionApp extends React.Component{
         }
 
         this.setState((prevState) => ({options: prevState.options.concat([option])}))
-    }
+    };
 
 
     componentDidMount(){
