@@ -5,10 +5,11 @@ const OptionModal = (props) => (
     <Modal
         isOpen={!!props.selectedOption}
         contentLabel="selected option"
+        onRequestClose={props.handleCloseModal}
     >
         <h3>Selected Options</h3>
         {props.selectedOption && <p>{props.selectedOption}</p>}
-        <button>Okay</button>
+        <button onClick={props.handleCloseModal}>Okay</button>
     </Modal>
 )
 
