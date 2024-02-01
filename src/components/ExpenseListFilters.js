@@ -1,4 +1,4 @@
-import React from "react"; // Importing React library
+import React from "react";
 import { connect } from "react-redux"; // Importing connect function from react-redux library
 import { setTextFilter, sortByAmount, sortByDate } from "../actions/filters"; // Importing action creators for filters
 
