@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux"; // Importing connect function from react-redux library
+import { connect } from "react-redux";
 import { setTextFilter } from "../actions/filters"; // Importing action creator for setting text filter
 
 const ExpenseListFilters = (props) => ( // Functional component for expense list filters
