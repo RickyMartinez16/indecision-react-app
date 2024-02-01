@@ -15,7 +15,7 @@ const ExpenseListFilters = (props) => ( // Functional component for rendering ex
             value={props.filters.sortBy} // Value of the select dropdown is bound to the sortBy filter in the Redux store
             onChange={(e) => { // Event handler for select change
                 if(e.target.value === "date"){
-                    props.dispatch(sortByDate()) // Dispatching action to sort by date
+                    props.dispatch(sortByDate())
                 } else if(e.target.value === "amount"){ // If selected value is "amount"
                     props.dispatch(sortByAmount()) // Dispatching action to sort by amount
                 }
