@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { setTextFilter } from "../actions/filters";
 
-const ExpenseListFilters = (props) => ( // Functional component for expense list filters
+const ExpenseListFilters = (props) => (
     <div>
         <input 
             type="text" 
