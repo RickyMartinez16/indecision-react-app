@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { setTextFilter } from "../actions/filters"; // Importing action creator for setting text filter
+import { setTextFilter } from "../actions/filters";
 
 const ExpenseListFilters = (props) => ( // Functional component for expense list filters
     <div>
