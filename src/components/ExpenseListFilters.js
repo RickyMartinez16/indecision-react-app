@@ -11,6 +11,10 @@ const ExpenseListFilters = (props) => (
                 props.dispatch(setTextFilter(e.target.value)) // Dispatching action to set text filter with the input value
             }}
         ></input>
+        <select>
+            <option>Date</option>
+            <option>Amount</option>
+        </select>
     </div>
 )
 
