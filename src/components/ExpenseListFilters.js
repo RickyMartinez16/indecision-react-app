@@ -16,7 +16,7 @@ const ExpenseListFilters = (props) => ( // Functional component for rendering ex
             onChange={(e) => { // Event handler for select change
                 if(e.target.value === "date"){
                     props.dispatch(sortByDate())
-                } else if(e.target.value === "amount"){ // If selected value is "amount"
+                } else if(e.target.value === "amount"){
                     props.dispatch(sortByAmount()) // Dispatching action to sort by amount
                 }
             }}
