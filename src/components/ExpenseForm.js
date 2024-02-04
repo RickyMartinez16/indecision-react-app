@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 class ExpenseForm extends Component {
+    state = {
+        description: ""
+    }
+
     render() {
         return (
             <div>
