@@ -2,7 +2,9 @@ import React from "react";
 
 const ExpenseForm = () => (
     <div>
-        Expense Form
+        <form>
+            <input type="text" placeholder="Description" autoFocus></input>
+        </form>
     </div>
 )
 
