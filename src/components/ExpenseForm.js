@@ -3,7 +3,8 @@ import React, { Component } from "react";
 class ExpenseForm extends Component {
     state = {
         description: "",
-        note: ""
+        note: "",
+        amount: ""
     }
 
     onDescriptionChange = (e) => {
@@ -14,6 +15,11 @@ class ExpenseForm extends Component {
     onNoteChange = (e) => {
         const note = e.target.value
         this.setState(() => ({note}))
+    }
+
+    onAmountChange = (e) => {
+        const amount = e.target.value
+        
     }
 
     render() {
@@ -29,8 +35,10 @@ class ExpenseForm extends Component {
                     >
                     </input>
                     <input 
-                        type="number" 
+                        type="text" 
                         placeholder="Amount"
+                        value={this.state.amount}
+                        onChange={this.onAmountChange}
                     >
                     </input>
                     <textarea 
