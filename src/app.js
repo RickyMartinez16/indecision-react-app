@@ -1,4 +1,26 @@
 import React from "react";
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
-ReactDOM.render(<p>this is my boiler plate</p>, document.getElementById("app"))
+const ExpenseDashboardPage = () => (
+    <div>
+        This is my dashboard ocmpenent
+    </div>
+)
+
+const AddExpensePage = () => (
+    <div>
+        This is my add expense page
+    </div>
+)
+
+const routes = (
+    <BrowserRouter>
+        <div>
+            <Route path="/" component={ExpenseDashboardPage}/>
+            <Route path="/create" component={AddExpensePage}/>
+        </div>
+    </BrowserRouter>
+)
+
+ReactDOM.render(routes, document.getElementById("app"))
