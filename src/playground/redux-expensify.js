@@ -105,16 +105,20 @@ store.subscribe(() => { // Subscribe to changes in the store and log the current
     console.log(store.getState());
 });
 
-// Dispatching actions
-const expenseOne = store.dispatch(addExpense({description: "rent", amount: 100})); // Dispatching action to add an expense
-const expenseTwo = store.dispatch(addExpense({description: "coffee", amount: 300})); // Dispatching action to add another expense
+// Dispatching actions--------------------
 
-store.dispatch(removeExpense({id: expenseOne.expense.id})); // Dispatching action to remove an expense
-store.dispatch(editExpense(expenseTwo.expense.id, {amount: 500})); // Dispatching action to edit an expense
-store.dispatch(setTextFilter("rent")); // Dispatching action to set text filter
-store.dispatch(setTextFilter()); // Dispatching action to clear text filter
-store.dispatch(sortByAmount());
-store.dispatch(sortByDate());
+// const expenseOne = store.dispatch(addExpense({description: "rent", amount: 100})); // Dispatching action to add an expense
+// const expenseTwo = store.dispatch(addExpense({description: "coffee", amount: 300})); // Dispatching action to add another expense
+
+// store.dispatch(removeExpense({id: expenseOne.expense.id})); // Dispatching action to remove an expense
+// store.dispatch(editExpense(expenseTwo.expense.id, {amount: 500})); // Dispatching action to edit an expense
+// store.dispatch(setTextFilter("rent")); // Dispatching action to set text filter
+// store.dispatch(setTextFilter()); // Dispatching action to clear text filter
+// store.dispatch(sortByAmount());
+// store.dispatch(sortByDate());
+store.dispatch(setStartDate(125))
+store.dispatch(setStartDate())
+store.dispatch(setEndDate(1250))
 
 // Sample demo state
 const demoState = {
