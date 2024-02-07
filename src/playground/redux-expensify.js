@@ -108,6 +108,12 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => { // Redu
     }
 };
 
+//get visible expenses
+
+const getVisibleExpenses = (expenses, filters) => {
+    return expenses
+}
+
 const store = createStore( // Creating Redux store
     combineReducers({ // Combining reducers into one root reducer
         expenses: expensesReducer, // Expenses reducer
@@ -116,7 +122,9 @@ const store = createStore( // Creating Redux store
 );
 
 store.subscribe(() => { // Subscribe to changes in the store and log the current state to the console
-    console.log(store.getState());
+    const state = store.getState();
+    const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+    console.log(visibleExpenses);
 });
 
 // Dispatching actions--------------------
