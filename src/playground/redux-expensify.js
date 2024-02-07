@@ -141,13 +141,13 @@ const expenseTwo = store.dispatch(addExpense({description: "coffee", amount: 300
 
 // store.dispatch(removeExpense({id: expenseOne.expense.id})); // Dispatching action to remove an expense
 // store.dispatch(editExpense(expenseTwo.expense.id, {amount: 500})); // Dispatching action to edit an expense
-// store.dispatch(setTextFilter("rent")); // Dispatching action to set text filter
+store.dispatch(setTextFilter("rent")); // Dispatching action to set text filter
 // store.dispatch(setTextFilter()); // Dispatching action to clear text filter
 // store.dispatch(sortByAmount());
 // store.dispatch(sortByDate());
-store.dispatch(setStartDate(0))
+// store.dispatch(setStartDate(0))
 // store.dispatch(setStartDate())
-store.dispatch(setEndDate(1250))
+// store.dispatch(setEndDate(1250))
 
 // Sample demo state
 const demoState = {
