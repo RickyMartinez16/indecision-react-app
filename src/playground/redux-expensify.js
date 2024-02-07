@@ -47,6 +47,16 @@ const sortByAmount = (sortBy) => ({
     sortBy
 })
 
+const setStartDate = (startDate) => ({
+    type: "SET_START_DATE",
+    startDate
+})
+
+const setEndDate = (endDate) => ({
+    type: "SET_END_DATE",
+    endDate
+})
+
 
 //REDUCERS---------------------------------------------------------------------------------------------
 
@@ -89,6 +99,10 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => { // Redu
             return {...state, sortBy: "amount"};
         case "SORT_BY_DATE":
             return {...state, sortBy: "date"}
+        case "SET_START_DATE":
+            return {...state, startDate: action.startDate};
+        case "SET_END_DATE":
+            return {...state, endDate: action.endDate}
         default:
             return state; // If none of the above, return the current state
     }
