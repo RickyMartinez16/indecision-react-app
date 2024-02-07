@@ -35,10 +35,12 @@ const setTextFilter = (text = " ") => ({
     text // Text to be used as a filter (default is an empty string)
 });
 
+//Action creater for changing the sort by to date
 const sortByDate = (sortBy) => ({
     type: "SORT_BY_DATE",
     sortBy
 })
+
 
 const sortByAmount = (sortBy) => ({
     type: "SORT_BY_AMOUNT",
