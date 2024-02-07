@@ -41,7 +41,7 @@ const sortByDate = (sortBy) => ({
     sortBy
 })
 
-
+//Action creater for changing the sort by amount
 const sortByAmount = (sortBy) => ({
     type: "SORT_BY_AMOUNT",
     sortBy
