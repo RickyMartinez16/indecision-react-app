@@ -110,8 +110,14 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => { // Redu
 
 //get visible expenses
 
-const getVisibleExpenses = (expenses, filters) => {
-    return expenses
+const getVisibleExpenses = (expenses, {text, sortBy, startDate, endDate}) => {
+    return expenses.filter((expense) => {
+        const startDateMatch = typeof startDate !== "number" || expense.createdAt >= startDate
+        const endDateMatch = typeof endDate !== "number" || expense.createdAt <= endDate
+        const textMatch = true
+
+        return startDateMatch && endDateMatch && textMatch
+    })
 }
 
 const store = createStore( // Creating Redux store
@@ -129,8 +135,8 @@ store.subscribe(() => { // Subscribe to changes in the store and log the current
 
 // Dispatching actions--------------------
 
-const expenseOne = store.dispatch(addExpense({description: "rent", amount: 100})); // Dispatching action to add an expense
-const expenseTwo = store.dispatch(addExpense({description: "coffee", amount: 300})); // Dispatching action to add another expense
+const expenseOne = store.dispatch(addExpense({description: "rent", amount: 100, createdAt: 1000})); // Dispatching action to add an expense
+const expenseTwo = store.dispatch(addExpense({description: "coffee", amount: 300, createdAt: -1000})); // Dispatching action to add another expense
 
 // store.dispatch(removeExpense({id: expenseOne.expense.id})); // Dispatching action to remove an expense
 // store.dispatch(editExpense(expenseTwo.expense.id, {amount: 500})); // Dispatching action to edit an expense
@@ -138,9 +144,9 @@ const expenseTwo = store.dispatch(addExpense({description: "coffee", amount: 300
 // store.dispatch(setTextFilter()); // Dispatching action to clear text filter
 // store.dispatch(sortByAmount());
 // store.dispatch(sortByDate());
-// store.dispatch(setStartDate(125))
+store.dispatch(setStartDate(0))
 // store.dispatch(setStartDate())
-// store.dispatch(setEndDate(1250))
+store.dispatch(setEndDate(1250))
 
 // Sample demo state
 const demoState = {
