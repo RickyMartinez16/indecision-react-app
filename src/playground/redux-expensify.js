@@ -22,7 +22,8 @@ const removeExpense = ({id} = {}) => ({
     id // ID of the expense to be removed
 });
 
-const editExpense = (id, updates) => ({ // Action creator for editing an expense
+// Action creator for editing an expense
+const editExpense = (id, updates) => ({
     type: "EDIT_EXPENSE", // Action type
     id, // ID of the expense to be edited
     updates // Updates to apply to the expense
