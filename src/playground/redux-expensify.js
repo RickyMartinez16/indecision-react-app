@@ -26,6 +26,7 @@ const editExpense = (id, updates) => ({
 
 //Expenses reducer
 const expensesReducerDefaultState = []
+
 const expensesReducer = (state = expensesReducerDefaultState, action) => {
     switch(action.type){
         case "ADD_EXPENSE":
