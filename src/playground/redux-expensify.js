@@ -9,6 +9,8 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
         return state
     }
 }
+
+//filters reducer
 const filtersReducerDefaultState = {
     text: "", 
     sortBy: "date", 
