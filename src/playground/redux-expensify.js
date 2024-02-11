@@ -35,6 +35,10 @@ const setTextFilter = (text = " ") => ({
     text // Text to be used as a filter (default is an empty string)
 });
 
+
+//REDUCERS---------------------------------------------------------------------------------------------
+
+
 // Expenses reducer
 const expensesReducerDefaultState = []; // Default state for expenses reducer
 
