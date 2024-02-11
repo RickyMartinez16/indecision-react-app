@@ -51,6 +51,7 @@ store.subscribe(() => {
 })
 
 store.dispatch(addExpense({description: "rent", amount: 100}));
+store.dispatch(addExpense({description: "coffee", amount: 300}));
 
 const demoState = {
     expenses: [{
