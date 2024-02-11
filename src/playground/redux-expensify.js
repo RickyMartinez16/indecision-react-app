@@ -1,8 +1,11 @@
 import { createStore, combineReducers } from "redux"; // Importing necessary functions from Redux library
 import uuid from "uuid"; // Importing a library to generate unique IDs
 
-// Action generators for expenses
-const addExpense = ({description = " ", note = " ", amount = 0, createdAt = 0} = {}) => ({ // Action creator for adding an expense
+// Action generators for expenses---------------------------------------------
+
+
+// Action creator for adding an expense
+const addExpense = ({description = " ", note = " ", amount = 0, createdAt = 0} = {}) => ({ 
     type: "ADD_EXPENSE", // Action type
     expense: { 
         id: uuid(), // Generate a unique ID for the expense
@@ -13,7 +16,8 @@ const addExpense = ({description = " ", note = " ", amount = 0, createdAt = 0} =
     }
 });
 
-const removeExpense = ({id} = {}) => ({ // Action creator for removing an expense
+// Action creator for removing an expense
+const removeExpense = ({id} = {}) => ({ 
     type: "REMOVE_EXPENSE", // Action type
     id // ID of the expense to be removed
 });
