@@ -35,6 +35,16 @@ const setTextFilter = (text = " ") => ({
     text // Text to be used as a filter (default is an empty string)
 });
 
+const sortByDate = (sortBy) => ({
+    type: "SORT_BY_DATE",
+    sortBy
+})
+
+const sortByAmount = (sortBy) => ({
+    type: "SORT_BY_AMOUNT",
+    sortBy
+})
+
 
 //REDUCERS---------------------------------------------------------------------------------------------
 
@@ -73,6 +83,10 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => { // Redu
     switch(action.type){ // Switch statement to handle different action types
         case "SET_TEXT_FILTER": // If action type is SET_TEXT_FILTER
             return {...state, text: action.text}; // Update the text filter with the provided text
+        case "SORT_BY_AMOUNT":
+            return {...state, sortBy: "amount"};
+        case "SORT_BY_DATE":
+            return {...state, sortBy: "date"}
         default:
             return state; // If none of the above, return the current state
     }
