@@ -2,7 +2,7 @@ import { createStore, combineReducers } from "redux";
 import uuid from "uuid";
 
 const addExpense = ({description = " ", note = " ", amount = 0, createdAt = 0} = {}) => ({
-    type: "ADD_EXPENENSE",
+    type: "ADD_EXPENSE",
     expense: { 
         id: uuid(),
         description,
@@ -17,6 +17,8 @@ const addExpense = ({description = " ", note = " ", amount = 0, createdAt = 0} =
 const expensesReducerDefaultState = []
 const expensesReducer = (state = expensesReducerDefaultState, action) => {
     switch(action.type){
+        case "ADD_EXPENSE":
+            return [...state, action.expense]
         default: 
         return state
     }
@@ -47,6 +49,8 @@ const store = createStore(
 store.subscribe(() => {
     console.log(store.getState())
 })
+
+store.dispatch(addExpense({description: "rent", amount: 100}));
 
 const demoState = {
     expenses: [{
