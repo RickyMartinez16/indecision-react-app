@@ -23,6 +23,11 @@ const editExpense = (id, updates) => ({
     updates
 })
 
+const setTextFilter = (text = " ") => ({
+    type: "SET_TEXT_FILTER",
+    text
+})
+
 
 //Expenses reducer
 const expensesReducerDefaultState = []
@@ -56,6 +61,8 @@ const filtersReducerDefaultState = {
 
 const filtersReducer = (state = filtersReducerDefaultState, action) => {
     switch(action.type){
+        case "SET_TEXT_FILTER":
+            return {...state.filters, ...action.text}
         default:
         return state
     }
