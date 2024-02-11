@@ -5,6 +5,10 @@ const addExpense = ({description = " ", note = " ", amount = 0, createdAt = 0} =
     type: "ADD_EXPENENSE",
     expense: { 
         id: uuid(),
+        description,
+        note,
+        amount,
+        createdAt
     }
 })
 
@@ -40,7 +44,9 @@ const store = createStore(
     })
 )
 
-console.log(store.getState())
+store.subscribe(() => {
+    console.log(store.getState())
+})
 
 const demoState = {
     expenses: [{
