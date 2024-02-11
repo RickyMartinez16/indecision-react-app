@@ -29,7 +29,8 @@ const editExpense = (id, updates) => ({
     updates // Updates to apply to the expense
 });
 
-const setTextFilter = (text = " ") => ({ // Action creator for setting text filter
+// Action creator for setting text filter
+const setTextFilter = (text = " ") => ({
     type: "SET_TEXT_FILTER", // Action type
     text // Text to be used as a filter (default is an empty string)
 });
