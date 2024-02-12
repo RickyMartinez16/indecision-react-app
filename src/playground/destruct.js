@@ -36,3 +36,9 @@ const address = ["900 Battery Ave", "Atlanta", "Georgia", "30339"]
 const [, city, state = "New Jersey",] = address;
 
 console.log(`You are in ${city}, ${state}`)
+
+
+const coffee = ["Coffee (hot)", "2.00", "2.50", "3.00"]
+const [type, small, medium, large] = coffee
+
+console.log(`A medium ${type} costs ${medium}`)
