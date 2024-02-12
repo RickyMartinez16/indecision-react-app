@@ -31,4 +31,8 @@
 
 //ARRAY------------------------
 
+const address = ["900 Battery Ave", "Atlanta", "Georgia", "30339"]
 
+const [, city, state = "New Jersey",] = address;
+
+console.log(`You are in ${city}, ${state}`)
