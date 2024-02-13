@@ -16,9 +16,8 @@ const setCount = ({count}) => ({
     count: count
 })
 
-const resetCount = ({count = 0}) => ({
-    type: "RESET",
-    count: 0
+const resetCount = () => ({
+    type: "RESET"
 })
 
 const store = createStore((state = { count: 0}, action) => {
