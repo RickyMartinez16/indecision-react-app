@@ -10,6 +10,10 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
     }
 }
 
+const store = createStore(expensesReducer)
+
+console.log(store.getState)
+
 const demoState = {
     expenses: [{
         id: "aekhflasjkhl",
