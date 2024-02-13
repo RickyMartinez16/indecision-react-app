@@ -7,5 +7,6 @@ const demoState = {
         note: "This wa the final payment for that address",
         amount: 54500,
         createdAt: 0
-    }]
+    }],
+    
 }
