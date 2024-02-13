@@ -1,5 +1,12 @@
 import { createStore, combineReducers } from "redux";
 
+
+//Expenses reducer
+
+const expensesReducer = (state = [], action => {
+    
+})
+
 const demoState = {
     expenses: [{
         id: "aekhflasjkhl",
@@ -15,3 +22,4 @@ const demoState = {
         endDate: undefined
     }
 }
+
