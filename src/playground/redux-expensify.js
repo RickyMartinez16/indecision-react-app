@@ -19,11 +19,12 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
 
 const store = createStore(
     combineReducers({
-        expenses: expensesReducer
+        expenses: expensesReducer,
+        filters: filtersReducer
     })
 )
 
-console.log(store.getState)
+console.log(store.getState())
 
 const demoState = {
     expenses: [{
