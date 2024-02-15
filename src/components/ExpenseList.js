@@ -5,7 +5,10 @@ import ExpenseListItem from "./ExpenseListItem";
 const ExpenseList = (props) => (
     <div>
         <h1>Expense list</h1>
-        {props.expenses.length}
+        {props.expenses.length === 0 && <p>Please add an expense</p>}
+        {props.expenses.map((expense) => {
+            return <ExpenseListItem {...expense}/>
+        })}
     </div>
 )
 
