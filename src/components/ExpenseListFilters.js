@@ -1,9 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
+import { setTextFilter } from "../actions/filters";
 
 const ExpenseListFilters = (props) => (
     <div>
-        <input type="text" value={props.filters.text}></input>
+        <input type="text" value={props.filters.text} onChange={(e) => {
+            props.dispatch()
+            console.log(e.target.value)
+        }}></input>
     </div>
 )
 
