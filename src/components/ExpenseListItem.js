@@ -1,4 +1,5 @@
 import React from "react";
+import { removeExpense } from "../actions/expenses";
 
 const ExpenseListItem = ({description, amount, createdAt}) => (
     <div>
